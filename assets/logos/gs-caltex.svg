@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 50" width="170" height="50">
+  <g transform="translate(10, 10)">
+    <!-- GS Caltex dynamic double arc symbol -->
+    <path d="M4 16 C4 7 11 0 20 0 C24 0 27 1.5 29 4 L24 8 C23 6 21 5 19 5 C13 5 9 10 9 16 C9 22 13 27 19 27 C24 27 27 24 28 21 L19 21 L19 16 L33 16 C33 25 26 32 19 32 C10 32 4 25 4 16 Z" fill="#00A859" />
+    <path d="M22 6 C24 3 28 1 33 2 C38 3 41 8 41 13 C41 19 37 25 32 28 L30 23 C33 21 35 18 35 14 C35 10 33 7 30 6 C28 5 25 6 23 8 Z" fill="#0072BC" />
+    <text x="46" y="16" font-family="'Manrope', 'Inter', sans-serif" font-weight="900" font-size="14" fill="#0B2A4A" letter-spacing="1">GS <tspan fill="#00A859">Caltex</tspan></text>
+    <text x="46" y="27" font-family="'Manrope', 'Inter', sans-serif" font-weight="600" font-size="7.5" fill="#667085" letter-spacing="1.5">LUBRICANTS</text>
+  </g>
+</svg>

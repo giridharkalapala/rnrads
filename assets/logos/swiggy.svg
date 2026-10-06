@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 50" width="160" height="50">
+  <g transform="translate(10, 8)">
+    <path d="M12 2 C6 2 2 7 2 13 C2 21 12 28 12 28 C12 28 22 21 22 13 C22 7 18 2 12 2 Z M12 17 C9.8 17 8 15.2 8 13 C8 10.8 9.8 9 12 9 C14.2 9 16 10.8 16 13 C16 15.2 14.2 17 12 17 Z" fill="#FC8019" />
+    <text x="32" y="20" font-family="'Manrope', 'Inter', sans-serif" font-weight="900" font-size="18" fill="#FC8019" letter-spacing="1">SWIGGY</text>
+  </g>
+</svg>
