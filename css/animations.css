@@ -64,16 +64,25 @@
 
 .reveal-fade-left {
   opacity: 0;
-  transform: translateX(-35px);
+  transform: translateY(24px);
   transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
   will-change: opacity, transform;
 }
 
 .reveal-fade-right {
   opacity: 0;
-  transform: translateX(35px);
+  transform: translateY(24px);
   transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
   will-change: opacity, transform;
+}
+
+@media (min-width: 992px) {
+  .reveal-fade-left {
+    transform: translateX(-35px);
+  }
+  .reveal-fade-right {
+    transform: translateX(35px);
+  }
 }
 
 .reveal-zoom {

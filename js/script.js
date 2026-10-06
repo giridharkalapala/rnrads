@@ -127,13 +127,18 @@ function initMobileNav() {
     const isOpen = open !== undefined ? open : !navMenu.classList.contains('active');
     navMenu.classList.toggle('active', isOpen);
     toggleBtn.setAttribute('aria-expanded', isOpen);
-    toggleBtn.innerHTML = isOpen
-      ? '<i class="fa-solid fa-xmark"></i>'
-      : '<i class="fa-solid fa-bars-staggered"></i>';
+    const icon = toggleBtn.querySelector('i');
+    if (icon) {
+      icon.className = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars-staggered';
+    }
     document.body.style.overflow = isOpen ? 'hidden' : '';
   };
 
-  toggleBtn.addEventListener('click', () => toggleMenu());
+  toggleBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    toggleMenu();
+  });
 
   navLinks.forEach(link => {
     link.addEventListener('click', () => toggleMenu(false));
@@ -144,6 +149,13 @@ function initMobileNav() {
     if (navMenu.classList.contains('active') &&
       !navMenu.contains(e.target) &&
       !toggleBtn.contains(e.target)) {
+      toggleMenu(false);
+    }
+  });
+
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && navMenu.classList.contains('active')) {
       toggleMenu(false);
     }
   });
