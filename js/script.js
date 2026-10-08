@@ -1,359 +1,450 @@
-document.addEventListener('DOMContentLoaded', () => {
-  initHeroVideo();
-  initStickyHeader();
-  initMobileNav();
-  initQuoteModal();
-  initScrollAnimations();
-  initCounters();
-  initClientCarousel();
-  initContactForm();
-  initSmoothScroll();
-  initActiveNavLink();
-  initAutoYear();
-});
+/**
+ * RNR ADS — PREMIUM JAVASCRIPT
+ * Auto Rickshaw Advertising Hyderabad
+ * Clean Vanilla JavaScript
+ */
 
-/* --------------------------------------------------------------------------
-   1. QUOTE POPUP / MODAL CONTROLLER
-   -------------------------------------------------------------------------- */
-function initQuoteModal() {
-  const modal = document.querySelector('#quoteModal');
-  if (!modal) return;
+document.addEventListener("DOMContentLoaded", function () {
+  "use strict";
 
-  const openBtns = document.querySelectorAll('.btn-quote-popup, [data-modal-target="#quoteModal"]');
-  const closeBtns = modal.querySelectorAll('.modal-close-btn, .modal-close-trigger, .modal-close, #modalCloseBtn');
-
-  const openModal = (serviceType) => {
-    modal.classList.add('active');
-    modal.setAttribute('aria-hidden', 'false');
-    document.body.style.overflow = 'hidden';
-
-    // Auto-select service in modal dropdown if passed
-    if (serviceType) {
-      const select = modal.querySelector('#modal-service, #modal-advertising-type');
-      if (select) {
-        select.value = serviceType;
-      }
-    }
-
-    // Focus on first input
-    setTimeout(() => {
-      const firstInput = modal.querySelector('input, select');
-      if (firstInput) firstInput.focus();
-    }, 100);
-  };
-
-  const closeModal = () => {
-    modal.classList.remove('active');
-    modal.setAttribute('aria-hidden', 'true');
-    document.body.style.overflow = '';
-  };
-
-  openBtns.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      const service = btn.getAttribute('data-service') || '';
-      openModal(service);
-    });
+  /* ============================================================
+     1. AUTO UPDATE COPYRIGHT YEAR
+  ============================================================ */
+  const yearElements = document.querySelectorAll(".current-year, #currentYear, #year");
+  const currentYear = new Date().getFullYear();
+  yearElements.forEach(function (el) {
+    el.textContent = currentYear;
   });
 
-  closeBtns.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      closeModal();
-    });
-  });
+  /* ============================================================
+     2. STICKY NAVBAR SCROLL EFFECT
+  ============================================================ */
+  const navbar = document.querySelector(".main-navbar");
+  const backToTopBtn = document.getElementById("backToTop");
 
-  // Close when clicking overlay backdrop
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal) {
-      closeModal();
-    }
-  });
+  function handleScroll() {
+    const scrollPos = window.scrollY || window.pageYOffset;
 
-  // Close on Escape key
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modal.classList.contains('active')) {
-      closeModal();
-    }
-  });
-}
-
-/* --------------------------------------------------------------------------
-   0. HERO VIDEO AUTOPLAY HELPER
-   -------------------------------------------------------------------------- */
-function initHeroVideo() {
-  const video = document.querySelector('.hero-bg-video');
-  if (video) {
-    video.muted = true;
-    const playPromise = video.play();
-    if (playPromise !== undefined) {
-      playPromise.catch(() => {
-        // Autoplay prevented; poster remains visible
-      });
-    }
-  }
-}
-
-/* --------------------------------------------------------------------------
-   1. STICKY HEADER WITH SCROLL BLUR
-   -------------------------------------------------------------------------- */
-function initStickyHeader() {
-  const header = document.querySelector('.site-header');
-  if (!header) return;
-
-  const handleScroll = () => {
-    if (window.scrollY > 40) {
-      header.classList.add('scrolled');
-    } else {
-      header.classList.remove('scrolled');
-    }
-  };
-
-  window.addEventListener('scroll', handleScroll, { passive: true });
-  handleScroll();
-}
-
-/* --------------------------------------------------------------------------
-   2. MOBILE NAVIGATION DRAWER
-   -------------------------------------------------------------------------- */
-function initMobileNav() {
-  const toggleBtn = document.querySelector('.nav-toggle');
-  const navMenu = document.querySelector('.nav-menu');
-  const navLinks = document.querySelectorAll('.nav-menu a.nav-link, .nav-menu a.dropdown-link');
-
-  if (!toggleBtn || !navMenu) return;
-
-  const toggleMenu = (open) => {
-    const isOpen = open !== undefined ? open : !navMenu.classList.contains('active');
-    navMenu.classList.toggle('active', isOpen);
-    toggleBtn.setAttribute('aria-expanded', isOpen);
-    const icon = toggleBtn.querySelector('i');
-    if (icon) {
-      icon.className = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars-staggered';
-    }
-    document.body.style.overflow = isOpen ? 'hidden' : '';
-  };
-
-  toggleBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    toggleMenu();
-  });
-
-  navLinks.forEach(link => {
-    link.addEventListener('click', () => toggleMenu(false));
-  });
-
-  // Close when clicking outside
-  document.addEventListener('click', (e) => {
-    if (navMenu.classList.contains('active') &&
-      !navMenu.contains(e.target) &&
-      !toggleBtn.contains(e.target)) {
-      toggleMenu(false);
-    }
-  });
-
-  // Close on Escape key
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && navMenu.classList.contains('active')) {
-      toggleMenu(false);
-    }
-  });
-}
-
-/* --------------------------------------------------------------------------
-   3. SCROLL REVEAL ANIMATIONS (INTERSECTION OBSERVER)
-   -------------------------------------------------------------------------- */
-function initScrollAnimations() {
-  const revealElements = document.querySelectorAll('.reveal-fade-up, .reveal-fade-left, .reveal-fade-right, .reveal-zoom');
-  if (!revealElements.length) return;
-
-  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (prefersReduced) {
-    revealElements.forEach(el => el.classList.add('is-revealed'));
-    return;
-  }
-
-  const observer = new IntersectionObserver((entries, obs) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-revealed');
-        obs.unobserve(entry.target);
-      }
-    });
-  }, {
-    threshold: 0.12,
-    rootMargin: '0px 0px -40px 0px'
-  });
-
-  revealElements.forEach(el => observer.observe(el));
-}
-
-/* --------------------------------------------------------------------------
-   4. ANIMATED NUMBER COUNTERS
-   -------------------------------------------------------------------------- */
-function initCounters() {
-  const counterElements = document.querySelectorAll('.counter-val');
-  if (!counterElements.length) return;
-
-  const animateCounter = (el) => {
-    const target = parseInt(el.getAttribute('data-target'), 10);
-    const duration = 1800; // ms
-    const stepTime = 20;
-    const steps = duration / stepTime;
-    const increment = target / steps;
-    let current = 0;
-
-    const timer = setInterval(() => {
-      current += increment;
-      if (current >= target) {
-        el.textContent = target.toLocaleString('en-IN');
-        clearInterval(timer);
+    // Navbar scrolled state
+    if (navbar) {
+      if (scrollPos > 50) {
+        navbar.classList.add("scrolled");
       } else {
-        el.textContent = Math.floor(current).toLocaleString('en-IN');
+        navbar.classList.remove("scrolled");
       }
-    }, stepTime);
-  };
+    }
 
-  const counterObserver = new IntersectionObserver((entries, obs) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        animateCounter(entry.target);
-        obs.unobserve(entry.target);
+    // Back-to-top button visibility
+    if (backToTopBtn) {
+      if (scrollPos > 300) {
+        backToTopBtn.classList.add("visible");
+      } else {
+        backToTopBtn.classList.remove("visible");
       }
+    }
+  }
+
+  window.addEventListener("scroll", handleScroll, { passive: true });
+  handleScroll(); // Initial check on load
+
+  /* ============================================================
+     2. BACK TO TOP BUTTON CLICK
+  ============================================================ */
+  if (backToTopBtn) {
+    backToTopBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
     });
-  }, { threshold: 0.25 });
+  }
 
-  counterElements.forEach(el => counterObserver.observe(el));
-}
+  /* ============================================================
+     3. MOBILE NAVBAR COLLAPSE AUTO-CLOSE
+  ============================================================ */
+  const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+  const navCollapse = document.getElementById("navbarNav");
+  if (navCollapse && window.bootstrap) {
+    const bsCollapse = new bootstrap.Collapse(navCollapse, { toggle: false });
+    navLinks.forEach(function (link) {
+      link.addEventListener("click", function () {
+        if (navCollapse.classList.contains("show")) {
+          bsCollapse.hide();
+        }
+      });
+    });
+  }
 
-/* --------------------------------------------------------------------------
-   5. CLIENTS SWIPER CAROUSEL
-   -------------------------------------------------------------------------- */
-function initClientCarousel() {
-  if (typeof Swiper !== 'undefined' && document.querySelector('.clients-swiper')) {
-    new Swiper('.clients-swiper', {
+  /* ============================================================
+     4. HERO SWIPER SLIDER INITIALIZATION
+  ============================================================ */
+  const heroSwiperEl = document.querySelector(".hero-swiper");
+  if (heroSwiperEl && typeof Swiper !== "undefined") {
+    new Swiper(".hero-swiper", {
+      loop: true,
+      effect: "fade",
+      fadeEffect: {
+        crossFade: true
+      },
+      speed: 900,
+      autoplay: {
+        delay: 4500,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true
+      },
+      navigation: {
+        nextEl: ".hero-swiper .swiper-button-next",
+        prevEl: ".hero-swiper .swiper-button-prev"
+      },
+      pagination: {
+        el: ".hero-swiper .swiper-pagination",
+        clickable: true
+      },
+      keyboard: {
+        enabled: true,
+        onlyInViewport: true
+      },
+      grabCursor: true
+    });
+  }
+
+  /* ============================================================
+     5. CLIENTS LOGO CAROUSEL INITIALIZATION
+  ============================================================ */
+  const clientsSwiperEl = document.querySelector(".clients-swiper");
+  if (clientsSwiperEl && typeof Swiper !== "undefined") {
+    new Swiper(".clients-swiper", {
+      loop: true,
       slidesPerView: 2,
       spaceBetween: 20,
-      loop: true,
+      speed: 700,
       autoplay: {
-        delay: 2400,
-        disableOnInteraction: false,
+        delay: 2500,
+        disableOnInteraction: false
       },
       breakpoints: {
         480: {
           slidesPerView: 3,
-          spaceBetween: 24,
+          spaceBetween: 20
         },
         768: {
           slidesPerView: 4,
-          spaceBetween: 28,
+          spaceBetween: 24
         },
         1024: {
           slidesPerView: 5,
-          spaceBetween: 32,
+          spaceBetween: 30
         },
-      },
-    });
-  }
-}
-
-/* --------------------------------------------------------------------------
-   6. CONTACT / ENQUIRY FORM VALIDATION & TOAST
-   -------------------------------------------------------------------------- */
-function initContactForm() {
-  const forms = document.querySelectorAll('.rnr-quote-form');
-  if (!forms.length) return;
-
-  forms.forEach(form => {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-
-      const submitBtn = form.querySelector('button[type="submit"]');
-      const originalBtnText = submitBtn ? submitBtn.innerHTML : 'Submit';
-
-      if (submitBtn) {
-        submitBtn.disabled = true;
-        submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Processing...';
-      }
-
-      setTimeout(() => {
-        showToast('Thank you! Your advertising inquiry has been submitted. Our media specialist will contact you within 2 hours.');
-        form.reset();
-        if (submitBtn) {
-          submitBtn.disabled = false;
-          submitBtn.innerHTML = originalBtnText;
+        1200: {
+          slidesPerView: 6,
+          spaceBetween: 30
         }
-      }, 1000);
-    });
-  });
-}
-
-function showToast(message) {
-  let toast = document.querySelector('.toast-msg');
-  if (!toast) {
-    toast = document.createElement('div');
-    toast.className = 'toast-msg';
-    toast.innerHTML = `<i class="fa-solid fa-circle-check text-cyan"></i> <span></span>`;
-    document.body.appendChild(toast);
-  }
-
-  toast.querySelector('span').textContent = message;
-  toast.classList.add('show');
-
-  setTimeout(() => {
-    toast.classList.remove('show');
-  }, 4500);
-}
-
-/* --------------------------------------------------------------------------
-   7. SMOOTH SCROLLING FOR HASH LINKS
-   -------------------------------------------------------------------------- */
-function initSmoothScroll() {
-  document.querySelectorAll('a[href^="#"]:not(.btn-quote-popup):not([href="#quoteModal"])').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      const targetId = this.getAttribute('href');
-      if (targetId === '#' || targetId === '' || targetId === '#quoteModal') return;
-
-      const targetElement = document.querySelector(targetId);
-      if (targetElement) {
-        e.preventDefault();
-        const headerHeight = document.querySelector('.site-header')?.offsetHeight || 80;
-        const targetPos = targetElement.getBoundingClientRect().top + window.scrollY - headerHeight;
-
-        window.scrollTo({
-          top: targetPos,
-          behavior: 'smooth'
-        });
       }
     });
+  }
+
+  /* ============================================================
+     6. NUMBER COUNTER ANIMATION (INTERSECTION OBSERVER)
+  ============================================================ */
+  const countElements = document.querySelectorAll(".counter-value");
+
+  function animateCounter(el) {
+    const target = parseInt(el.getAttribute("data-target"), 10);
+    const suffix = el.getAttribute("data-suffix") || "";
+    const prefix = el.getAttribute("data-prefix") || "";
+    const duration = 1800; // ms
+    const frameRate = 1000 / 60;
+    const totalFrames = Math.round(duration / frameRate);
+    let frame = 0;
+
+    const counter = setInterval(function () {
+      frame++;
+      const progress = frame / totalFrames;
+      // Ease out quad
+      const current = Math.round(target * (1 - Math.pow(1 - progress, 3)));
+      el.innerText = prefix + current.toLocaleString() + suffix;
+
+      if (frame >= totalFrames) {
+        clearInterval(counter);
+        el.innerText = prefix + target.toLocaleString() + suffix;
+      }
+    }, frameRate);
+  }
+
+  if ("IntersectionObserver" in window && countElements.length > 0) {
+    const counterObserver = new IntersectionObserver(
+      function (entries, observer) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            animateCounter(entry.target);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.25 }
+    );
+
+    countElements.forEach(function (el) {
+      counterObserver.observe(el);
+    });
+  } else {
+    // Fallback if IntersectionObserver not supported
+    countElements.forEach(function (el) {
+      const target = el.getAttribute("data-target");
+      const suffix = el.getAttribute("data-suffix") || "";
+      const prefix = el.getAttribute("data-prefix") || "";
+      el.innerText = prefix + target + suffix;
+    });
+  }
+
+  /* ============================================================
+     7. SCROLL REVEAL ANIMATIONS (INTERSECTION OBSERVER)
+  ============================================================ */
+  const animateElements = document.querySelectorAll(
+    ".animate-fade-up, .animate-fade-left, .animate-fade-right"
+  );
+
+  if ("IntersectionObserver" in window && animateElements.length > 0) {
+    const scrollObserver = new IntersectionObserver(
+      function (entries, observer) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15, rootMargin: "0px 0px -40px 0px" }
+    );
+
+    animateElements.forEach(function (el) {
+      scrollObserver.observe(el);
+    });
+  } else {
+    animateElements.forEach(function (el) {
+      el.classList.add("is-visible");
+    });
+  }
+
+  /* ============================================================
+     8. CONTACT & QUOTE FORM VALIDATION
+  ============================================================ */
+  const contactForms = document.querySelectorAll(".rnr-contact-form");
+
+  contactForms.forEach(function (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+
+      let isValid = true;
+
+      // Inputs
+      const nameInput = form.querySelector('[name="name"]');
+      const phoneInput = form.querySelector('[name="phone"]');
+      const emailInput = form.querySelector('[name="email"]');
+      const serviceInput = form.querySelector('[name="service"]');
+      const messageInput = form.querySelector('[name="message"]');
+      const successBanner = form.querySelector(".form-success-banner");
+
+      // Validate Name
+      if (nameInput) {
+        if (!nameInput.value.trim() || nameInput.value.trim().length < 2) {
+          nameInput.classList.add("is-invalid");
+          nameInput.classList.remove("is-valid");
+          isValid = false;
+        } else {
+          nameInput.classList.remove("is-invalid");
+          nameInput.classList.add("is-valid");
+        }
+      }
+
+      // Validate Phone (Indian 10-digit format or general phone)
+      if (phoneInput) {
+        const phoneVal = phoneInput.value.replace(/\s+/g, "");
+        const phoneRegex = /^[0-9+\-()]{8,15}$/;
+        if (!phoneVal || !phoneRegex.test(phoneVal)) {
+          phoneInput.classList.add("is-invalid");
+          phoneInput.classList.remove("is-valid");
+          isValid = false;
+        } else {
+          phoneInput.classList.remove("is-invalid");
+          phoneInput.classList.add("is-valid");
+        }
+      }
+
+      // Validate Email
+      if (emailInput) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailInput.value.trim() || !emailRegex.test(emailInput.value.trim())) {
+          emailInput.classList.add("is-invalid");
+          emailInput.classList.remove("is-valid");
+          isValid = false;
+        } else {
+          emailInput.classList.remove("is-invalid");
+          emailInput.classList.add("is-valid");
+        }
+      }
+
+      // Validate Service Select
+      if (serviceInput) {
+        if (!serviceInput.value || serviceInput.value === "") {
+          serviceInput.classList.add("is-invalid");
+          serviceInput.classList.remove("is-valid");
+          isValid = false;
+        } else {
+          serviceInput.classList.remove("is-invalid");
+          serviceInput.classList.add("is-valid");
+        }
+      }
+
+      // Validate Message
+      if (messageInput) {
+        if (!messageInput.value.trim() || messageInput.value.trim().length < 5) {
+          messageInput.classList.add("is-invalid");
+          messageInput.classList.remove("is-valid");
+          isValid = false;
+        } else {
+          messageInput.classList.remove("is-invalid");
+          messageInput.classList.add("is-valid");
+        }
+      }
+
+      // Submit success
+      if (isValid) {
+        const submitBtn = form.querySelector('button[type="submit"]');
+        if (submitBtn) {
+          submitBtn.disabled = true;
+          const originalText = submitBtn.innerHTML;
+          submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span> Submitting...';
+
+          setTimeout(function () {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalText;
+            form.reset();
+
+            // Clear validation classes
+            form.querySelectorAll(".is-valid, .is-invalid").forEach(function (el) {
+              el.classList.remove("is-valid", "is-invalid");
+            });
+
+            // Show Success Banner
+            if (successBanner) {
+              successBanner.style.display = "block";
+              successBanner.scrollIntoView({ behavior: "smooth", block: "nearest" });
+              setTimeout(function () {
+                successBanner.style.display = "none";
+              }, 8000);
+            }
+          }, 1000);
+        }
+      }
+    });
+
+    // Real-time input clearing of error states
+    form.querySelectorAll("input, select, textarea").forEach(function (input) {
+      input.addEventListener("input", function () {
+        if (input.classList.contains("is-invalid")) {
+          input.classList.remove("is-invalid");
+        }
+      });
+    });
   });
-}
 
-/* --------------------------------------------------------------------------
-   8. ACTIVE NAVIGATION LINK DETECTION
-   -------------------------------------------------------------------------- */
-function initActiveNavLink() {
-  const currentPath = window.location.pathname.split('/').pop() || 'index.html';
-  const navLinks = document.querySelectorAll('.nav-menu .nav-link');
+  /* ============================================================
+     9. MODAL QUOTE FORM VALIDATION & SUBMISSION
+  ============================================================ */
+  const modalForm = document.getElementById("quoteModalForm");
+  const modalSuccessBanner = document.getElementById("modalSuccessBanner");
 
-  navLinks.forEach(link => {
-    const href = link.getAttribute('href');
-    if (href === currentPath || (currentPath === '' && href === 'index.html')) {
-      link.classList.add('active');
-    } else {
-      link.classList.remove('active');
-    }
-  });
-}
+  if (modalForm) {
+    modalForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      let isValid = true;
 
-/* --------------------------------------------------------------------------
-   9. AUTO-UPDATE COPYRIGHT YEAR
-   -------------------------------------------------------------------------- */
-function initAutoYear() {
-  const currentYear = new Date().getFullYear();
-  document.querySelectorAll('.current-year, #copyrightYear, .auto-year').forEach(el => {
-    el.textContent = currentYear;
-  });
-}
+      const nameInput = document.getElementById("modalFullName");
+      const phoneInput = document.getElementById("modalPhone");
+      const emailInput = document.getElementById("modalEmail");
+      const serviceInput = document.getElementById("modalService");
 
+      // Validate Name
+      if (nameInput) {
+        if (!nameInput.value.trim() || nameInput.value.trim().length < 2) {
+          nameInput.classList.add("is-invalid");
+          isValid = false;
+        } else {
+          nameInput.classList.remove("is-invalid");
+        }
+      }
+
+      // Validate Phone
+      if (phoneInput) {
+        const phoneRegex = /^[+]?[(]?[0-9]{3}[)]?[-\s.]?[0-9]{3}[-\s.]?[0-9]{4,6}$/;
+        if (!phoneRegex.test(phoneInput.value.trim())) {
+          phoneInput.classList.add("is-invalid");
+          isValid = false;
+        } else {
+          phoneInput.classList.remove("is-invalid");
+        }
+      }
+
+      // Validate Email
+      if (emailInput) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(emailInput.value.trim())) {
+          emailInput.classList.add("is-invalid");
+          isValid = false;
+        } else {
+          emailInput.classList.remove("is-invalid");
+        }
+      }
+
+      // Validate Service
+      if (serviceInput) {
+        if (!serviceInput.value) {
+          serviceInput.classList.add("is-invalid");
+          isValid = false;
+        } else {
+          serviceInput.classList.remove("is-invalid");
+        }
+      }
+
+      if (isValid) {
+        const submitBtn = modalForm.querySelector('button[type="submit"]');
+        if (submitBtn) {
+          submitBtn.disabled = true;
+          const origText = submitBtn.innerHTML;
+          submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span> Submitting...';
+
+          setTimeout(function () {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = origText;
+            modalForm.reset();
+
+            if (modalSuccessBanner) {
+              modalSuccessBanner.classList.remove("d-none");
+              setTimeout(function () {
+                modalSuccessBanner.classList.add("d-none");
+                const quoteModalEl = document.getElementById("quoteModal");
+                if (quoteModalEl && window.bootstrap) {
+                  const modalInstance = bootstrap.Modal.getInstance(quoteModalEl);
+                  if (modalInstance) {
+                    modalInstance.hide();
+                  }
+                }
+              }, 4000);
+            }
+          }, 900);
+        }
+      }
+    });
+
+    modalForm.querySelectorAll("input, select, textarea").forEach(function (input) {
+      input.addEventListener("input", function () {
+        if (input.classList.contains("is-invalid")) {
+          input.classList.remove("is-invalid");
+        }
+      });
+    });
+  }
+});

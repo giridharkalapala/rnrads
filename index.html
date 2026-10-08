@@ -1,918 +1,1189 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RNR Ads | Auto Rickshaw & Bus Advertising in Hyderabad</title>
-  <meta name="description" content="RNR Ads provides powerful auto rickshaw, bus and outdoor advertising solutions across Hyderabad. Reach thousands of customers daily with high-visibility transit media.">
-  <meta name="keywords" content="Auto Rickshaw Advertising Hyderabad, Bus Branding Hyderabad, TSRTC Bus Advertising, Transit Ads Telangana, Outdoor Advertising Agency Hyderabad">
-  
-  <!-- Open Graph Metadata -->
-  <meta property="og:title" content="RNR Ads | Outdoor & Transit Advertising Agency Hyderabad">
-  <meta property="og:description" content="Make your brand impossible to miss. Over 5,000+ advertising vehicles covering every corner of Hyderabad.">
-  <meta property="og:image" content="assets/images/hero-bg.jpg">
+  <title>RNR Ads | Auto Rickshaw Advertising in Hyderabad</title>
+  <meta name="description"
+    content="RNR Ads provides high-impact auto rickshaw advertising and outdoor branding solutions across Hyderabad. Reach thousands daily with 5,000+ fleet vehicles.">
+  <meta name="keywords"
+    content="Auto Rickshaw Advertising Hyderabad, Auto Branding Hyderabad, Rear Auto Ads, Side Panel Auto Advertising, Transit Media Hyderabad">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="RNR Ads | Auto Rickshaw Advertising in Hyderabad">
+  <meta property="og:description"
+    content="Turn everyday auto rickshaws into moving billboards across Hyderabad with RNR Ads.">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/hero-slide-1.jpg">
+
+  <!-- Favicon Icons -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+  <link rel="apple-touch-icon" href="assets/icons/favicon.png">
 
   <!-- Google Fonts: Manrope -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
 
-  <!-- Font Awesome Icons -->
+  <!-- Bootstrap 5.3 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome 6 CDN & Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-  <!-- Swiper.js CSS -->
+  <!-- Swiper.js CSS CDN -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
   <!-- Custom Stylesheets -->
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="css/responsive.css">
 </head>
+
 <body>
 
-  <!-- ==========================================================================
-       HEADER / NAVIGATION
-       ========================================================================== -->
-  <header class="site-header" id="header">
-    <div class="container nav-container">
-      <a href="index.html" class="logo-wrap" aria-label="RNR Ads Home">
-        <img src="assets/logos/logo-RNR.png" alt="RNR Ads Logo" width="180" height="42">
-      </a>
-
-      <nav class="nav-menu" id="navMenu" aria-label="Primary Navigation">
-        <a href="index.html" class="nav-link active">Home</a>
-        <a href="about.html" class="nav-link">About Us</a>
-
-        <!-- Services Dropdown -->
-        <div class="nav-item-dropdown">
-          <button class="dropdown-toggle nav-link" aria-expanded="false" aria-haspopup="true">
-            <span>Services</span>
-            <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <div class="dropdown-menu">
-            <a href="auto-branding.html" class="dropdown-link">
-              <i class="fa-solid fa-car-side"></i>
-              <span>Auto Branding</span>
-            </a>
-            <a href="bus-branding.html" class="dropdown-link">
-              <i class="fa-solid fa-bus"></i>
-              <span>Bus Branding</span>
-            </a>
-            <a href="auto-ads.html" class="dropdown-link">
-              <i class="fa-solid fa-rectangle-ad"></i>
-              <span>Auto Ads</span>
-            </a>
-            <a href="bus-ads.html" class="dropdown-link">
-              <i class="fa-solid fa-panorama"></i>
-              <span>Bus Ads</span>
-            </a>
+  <!-- ============================================================
+       TOP INFORMATION BAR
+  ============================================================ -->
+  <header class="top-bar">
+    <div class="container-custom">
+      <div class="top-bar-inner">
+        <!-- Contact Info (Right) -->
+        <div class="top-bar-contact">
+          <div class="top-bar-item location-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>413, 4th Floor, Kubera Towers, Narayanguda, Hyderabad - 29</span>
+          </div>
+          <div class="top-bar-item phone-item">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+918143252345">+91 81432 52345</a>
+          </div>
+          <div class="top-bar-item email-item">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:rnrads.hyd@gmail.com">rnrads.hyd@gmail.com</a>
           </div>
         </div>
 
-        <a href="clients.html" class="nav-link">Clients</a>
-        <a href="contact.html" class="nav-link">Contact</a>
-        <div class="mobile-menu-cta" style="display: none;">
-          <a href="#quoteModal" class="btn btn-primary btn-quote-popup">Get a Quote</a>
+        <!-- Social Links (Desktop) -->
+        <div class="top-bar-social">
+          <span>Follow Us:</span>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
         </div>
-      </nav>
-
-      <div class="nav-cta">
-        <a href="#quoteModal" class="btn btn-primary btn-quote-popup">
-          <span>Get a Quote</span>
-          <i class="fa-solid fa-arrow-right"></i>
-        </a>
       </div>
-
-      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-        <i class="fa-solid fa-bars-staggered"></i>
-      </button>
     </div>
   </header>
 
-  <main>
-    <!-- ==========================================================================
-         HERO SECTION WITH VIDEO BACKGROUND
-         ========================================================================== -->
-    <section class="hero-section" id="home">
-      <div class="hero-video-wrap">
-        <video autoplay muted loop playsinline class="hero-bg-video" poster="assets/images/hero-bg.jpg">
-          <source src="assets/RNR_HERO.mp4" type="video/mp4">
-        </video>
-        <div class="hero-video-overlay"></div>
-      </div>
-      <div class="hero-glow"></div>
-      <div class="container">
-        <div class="hero-content reveal-fade-up">
-          <div class="eyebrow eyebrow-pill">
-            <i class="fa-solid fa-location-dot"></i> OUTDOOR ADVERTISING • HYDERABAD
-          </div>
-          <h1 class="hero-heading">
-            MAKE YOUR BRAND <br>
-            <span class="text-cyan">IMPOSSIBLE TO MISS.</span>
-          </h1>
-          <p class="hero-description">
-            Reach thousands of customers every day with powerful auto rickshaw and bus advertising across Hyderabad's highest-traffic commercial corridors.
-          </p>
-          <div class="btn-group">
-            <a href="#quoteModal" class="btn btn-primary btn-quote-popup">
-              <span>Get a Quote</span>
-              <span class="btn-icon-circle"><i class="fa-solid fa-arrow-right"></i></span>
-            </a>
-            <a href="#services-section" class="btn btn-outline-white">
-              <span>View Our Services</span>
-            </a>
-          </div>
+  <!-- ============================================================
+       MAIN NAVIGATION (STICKY BOOTSTRAP NAVBAR)
+  ============================================================ -->
+  <nav class="navbar navbar-expand-lg main-navbar sticky-top">
+    <div class="container-custom d-flex align-items-center justify-content-between">
+      <!-- Logo -->
+      <a class="navbar-brand navbar-brand-wrapper" href="index.html">
+        <img src="assets/logo/RNR-main-logo.png" alt="RNR ADS Logo" class="brand-logo-img">
+      </a>
 
-          <div class="hero-trust-row">
-            <div class="trust-item">
-              <div class="trust-number"><span class="counter-val" data-target="5000">0</span><span>+</span></div>
-              <div class="trust-label">Active Vehicles</div>
-            </div>
-            <div class="trust-item">
-              <div class="trust-number">100<span>%</span></div>
-              <div class="trust-label">Hyderabad Coverage</div>
-            </div>
-            <div class="trust-item">
-              <div class="trust-number"><span class="counter-val" data-target="15">0</span><span>+</span></div>
-              <div class="trust-label">Years Experience</div>
-            </div>
-          </div>
+      <!-- Mobile Hamburger Toggle -->
+      <button class="navbar-toggler navbar-toggler-custom d-lg-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Nav Links & CTA -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-lg-center gap-lg-2">
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="auto-ads.html">Auto Ads</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="auto-branding.html">Auto Branding</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="clients.html">Clients</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <div class="ms-lg-4 mt-3 mt-lg-0">
+          <button type="button" class="btn-cyan nav-btn-quote" data-bs-toggle="modal" data-bs-target="#quoteModal">
+            GET A QUOTE <i class="fa-solid fa-arrow-right btn-arrow"></i>
+          </button>
         </div>
       </div>
+    </div>
+  </nav>
 
-      <div class="scroll-indicator" aria-hidden="true">
-        <div class="scroll-mouse">
-          <div class="scroll-wheel"></div>
-        </div>
-        <span>Scroll</span>
-      </div>
-    </section>
+  <!-- ============================================================
+       HERO SECTION (SWIPER.JS SLIDER)
+  ============================================================ -->
+  <section class="hero-section">
+    <div class="swiper hero-swiper">
+      <div class="swiper-wrapper">
 
-    <!-- ==========================================================================
-         INTRODUCTION SECTION (SPLIT LAYOUT)
-         ========================================================================== -->
-    <section class="section section-white" id="intro">
-      <div class="container">
-        <div class="split-grid">
-          <div class="intro-text-col reveal-fade-left">
-            <div class="eyebrow">
-              <i class="fa-solid fa-bolt"></i> High Impact Mobility
-            </div>
-            <h2 class="section-heading section-heading-light">
-              YOUR BRAND. <br>
-              <span class="text-cyan">ON THE MOVE.</span>
-            </h2>
-            <p class="section-subtitle" style="margin-bottom: 1.5rem;">
-              Every day, millions of commuters, professionals, students, and shoppers navigate Hyderabad's roads. RNR Ads turns this continuous urban motion into high-frequency, non-intrusive brand touchpoints that guarantee maximum recall.
-            </p>
-            <p class="section-subtitle" style="margin-bottom: 2rem;">
-              Whether navigating high-density commercial hubs like HITEC City, Banjara Hills, and Secunderabad or neighborhood arterial roads, our fleet delivers your message directly at eye level.
-            </p>
-            <a href="about.html" class="btn btn-outline-dark">
-              <span>Discover Our Reach</span>
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
-          </div>
-
-          <div class="intro-image-col reveal-fade-right">
-            <div class="intro-image-wrap">
-              <img src="assets/images/auto-branding-rear.jpg" alt="RNR Ads Auto Rickshaw Branding in Hyderabad" loading="lazy">
-              <div class="intro-stat-badge">
-                <div class="intro-stat-num">5,000+</div>
-                <div class="intro-stat-text">Advertising Vehicles Fleet</div>
+        <!-- SLIDE 1 -->
+        <div class="swiper-slide hero-slide" style="background-image: url('assets/images/hero-slide-1.jpg');">
+          <div class="hero-overlay"></div>
+          <div class="container-custom">
+            <div class="hero-content">
+              <div class="hero-badge">
+                <span class="pulse-dot"></span>
+                AUTO RICKSHAW ADVERTISING • HYDERABAD
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         ABOUT / COMPANY STATS SECTION
-         ========================================================================== -->
-    <section class="section section-dark" id="about-preview">
-      <div class="container">
-        <div class="section-header-center reveal-fade-up">
-          <div class="eyebrow eyebrow-light">
-            <i class="fa-solid fa-bullhorn"></i> Hyderabad's Premier Transit Media Network
-          </div>
-          <h2 class="section-heading section-heading-dark">
-            WE TURN EVERY STREET <br>
-            <span class="text-cyan">INTO BRAND EXPOSURE.</span>
-          </h2>
-          <p class="section-subtitle section-subtitle-dark" style="margin: 0 auto;">
-            RNR Ads delivers impactful auto and bus advertising across Hyderabad, connecting leading corporate and regional brands with their audience through an unmissable network of high-visibility transit assets.
-          </p>
-        </div>
-
-        <div class="stats-grid">
-          <div class="stat-box reveal-fade-up delay-100">
-            <div class="stat-number-wrap">
-              <span class="counter-val" data-target="5000">0</span><span class="stat-plus">+</span>
-            </div>
-            <h3 class="stat-title">Fleet Vehicles</h3>
-            <p class="stat-desc">Dedicated auto-rickshaws and transit buses moving 14+ hours every single day.</p>
-          </div>
-
-          <div class="stat-box reveal-fade-up delay-200">
-            <div class="stat-number-wrap">
-              <span class="counter-val" data-target="15">0</span><span class="stat-plus">+</span>
-            </div>
-            <h3 class="stat-title">Years Experience</h3>
-            <p class="stat-desc">Pioneering transit advertising in Telangana with proven ROI for hundreds of brands.</p>
-          </div>
-
-          <div class="stat-box reveal-fade-up delay-300">
-            <div class="stat-number-wrap">
-              <span class="counter-val" data-target="100">0</span><span class="stat-plus">%</span>
-            </div>
-            <h3 class="stat-title">Local Hyderabad Coverage</h3>
-            <p class="stat-desc">From Old City to the Financial District, Gachibowli, Kukatpally, and beyond.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         SERVICES SECTION (4 CARDS GRID)
-         ========================================================================== -->
-    <section class="section section-navy-dark" id="services-section">
-      <div class="container">
-        <div class="section-header-left reveal-fade-up">
-          <div class="eyebrow eyebrow-light">
-            <i class="fa-solid fa-layer-group"></i> WHAT WE DO
-          </div>
-          <h2 class="section-heading section-heading-dark">
-            Advertising That <br>
-            <span class="text-cyan">Moves With Your Audience.</span>
-          </h2>
-          <p class="section-subtitle section-subtitle-dark">
-            Tailored transit and outdoor advertising formats engineered for maximum reach, exceptional durability, and undeniable visual dominance.
-          </p>
-        </div>
-
-        <div class="services-grid">
-          <!-- Card 01 -->
-          <div class="service-card reveal-fade-up delay-100">
-            <div>
-              <div class="service-card-top">
-                <span class="service-num">01</span>
-                <div class="service-icon"><i class="fa-solid fa-taxi"></i></div>
-              </div>
-              <h3 class="service-title">AUTO RICKSHAW BRANDING</h3>
-              <p class="service-desc">
-                Turn everyday auto-rickshaws into moving billboards that reach customers throughout residential and commercial hotspots across Hyderabad. Complete hood, back panel, and interior sticker formats.
+              <h1 class="hero-heading">
+                MAKE YOUR BRAND<br>
+                <span class="text-cyan">IMPOSSIBLE TO MISS.</span>
+              </h1>
+              <p class="hero-desc">
+                Reach thousands of customers every day with powerful auto rickshaw advertising across Hyderabad.
               </p>
-            </div>
-            <a href="auto-branding.html" class="service-action">
-              <span>Explore Formats</span>
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
-          </div>
-
-          <!-- Card 02 -->
-          <div class="service-card reveal-fade-up delay-200">
-            <div>
-              <div class="service-card-top">
-                <span class="service-num">02</span>
-                <div class="service-icon"><i class="fa-solid fa-bus-simple"></i></div>
+              <div class="hero-btn-group">
+                <button type="button" class="btn-cyan" data-bs-toggle="modal" data-bs-target="#quoteModal">
+                  GET A QUOTE <i class="fa-solid fa-arrow-right btn-arrow"></i>
+                </button>
+                <a href="auto-branding.html" class="btn-outline-white">
+                  OUR SERVICES <i class="fa-solid fa-arrow-right btn-arrow"></i>
+                </a>
               </div>
-              <h3 class="service-title">BUS BRANDING</h3>
-              <p class="service-desc">
-                Transform city buses into high-impact advertising platforms with exceptional visibility. Large-scale full wraps, side panels, and back panel placements across key TSRTC commuter routes.
-              </p>
-            </div>
-            <a href="bus-branding.html" class="service-action">
-              <span>View Bus Formats</span>
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
-          </div>
-
-          <!-- Card 03 -->
-          <div class="service-card reveal-fade-up delay-300">
-            <div>
-              <div class="service-card-top">
-                <span class="service-num">03</span>
-                <div class="service-icon"><i class="fa-solid fa-route"></i></div>
+              <div class="hero-stats-row">
+                <div class="hero-stat-item">
+                  <span class="hero-stat-number counter-value" data-target="5000" data-suffix="+">5,000+</span>
+                  <span class="hero-stat-label">Advertising Vehicles</span>
+                </div>
+                <div class="hero-stat-item">
+                  <span class="hero-stat-number">Hyderabad</span>
+                  <span class="hero-stat-label">City Coverage</span>
+                </div>
+                <div class="hero-stat-item">
+                  <span class="hero-stat-number counter-value" data-target="15" data-suffix="+">15+</span>
+                  <span class="hero-stat-label">Years Experience</span>
+                </div>
               </div>
-              <h3 class="service-title">TRANSIT ADVERTISING</h3>
-              <p class="service-desc">
-                Reach high-intent audiences across busy junctions, IT corridors, shopping areas, and arterial highways with strategically routed transit media packages designed for high impressions.
-              </p>
             </div>
-            <a href="auto-branding.html" class="service-action">
-              <span>Route Packages</span>
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
           </div>
+        </div>
 
-          <!-- Card 04 -->
-          <div class="service-card reveal-fade-up delay-400">
-            <div>
-              <div class="service-card-top">
-                <span class="service-num">04</span>
-                <div class="service-icon"><i class="fa-solid fa-chart-line"></i></div>
+        <!-- SLIDE 2 -->
+        <div class="swiper-slide hero-slide" style="background-image: url('assets/images/hero-slide-2.jpg');">
+          <div class="hero-overlay"></div>
+          <div class="container-custom">
+            <div class="hero-content">
+              <div class="hero-badge">
+                <span class="pulse-dot"></span>
+                HIGH-VISIBILITY AUTO ADVERTISING
               </div>
-              <h3 class="service-title">CAMPAIGN MANAGEMENT</h3>
-              <p class="service-desc">
-                From route planning and premium creative fabrication to installation, daily GPS monitoring, and geotagged photographic proof of execution, we manage your campaign end-to-end.
-              </p>
-            </div>
-            <a href="contact.html" class="service-action">
-              <span>Get Full Plan</span>
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         FEATURED ADVERTISING SHOWCASE (EDITORIAL ASYMMETRIC GRID)
-         ========================================================================== -->
-    <section class="section section-light" id="showcase">
-      <div class="container">
-        <div class="section-header-left reveal-fade-up">
-          <div class="eyebrow">
-            <i class="fa-solid fa-images"></i> Visual Portfolio
-          </div>
-          <h2 class="section-heading section-heading-light">
-            YOUR BRAND. <br>
-            <span class="text-cyan">EVERYWHERE PEOPLE LOOK.</span>
-          </h2>
-          <p class="section-subtitle">
-            Explore live campaign executions across Hyderabad's key transit corridors. High-grade weatherproof vinyl prints engineered for brilliant day &amp; night clarity.
-          </p>
-        </div>
-
-        <div class="showcase-grid">
-          <!-- Item 1: Large Bus Wrap -->
-          <div class="showcase-item item-large reveal-zoom delay-100">
-            <img src="assets/images/bus-branding-large.jpg" alt="TSRTC City Bus Side Wrap Advertising in Gachibowli Hyderabad" class="showcase-img" loading="lazy">
-            <div class="showcase-overlay">
-              <span class="showcase-badge">Bus Full Side Wrap</span>
-              <h3 class="showcase-title">TSRTC City Transit Campaign</h3>
-              <p style="color: #CBD5E1; font-size: 0.95rem;">High-frequency exposure along HITEC City and Gachibowli corporate corridors.</p>
-              <a href="bus-branding.html" class="showcase-link">View Campaign <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <!-- Item 2: Medium Auto Side Wrap -->
-          <div class="showcase-item item-medium reveal-zoom delay-200">
-            <img src="assets/images/auto-branding-side.jpg" alt="Side Panel Auto Branding Jubilee Hills" class="showcase-img" loading="lazy">
-            <div class="showcase-overlay">
-              <span class="showcase-badge">Auto Side Branding</span>
-              <h3 class="showcase-title">Retail &amp; Cafe Promotions</h3>
-              <p style="color: #CBD5E1; font-size: 0.95rem;">Targeted presence in Jubilee Hills and Banjara Hills shopping zones.</p>
-              <a href="auto-branding.html" class="showcase-link">View Campaign <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <!-- Item 3: Compact Auto Interior -->
-          <div class="showcase-item item-compact reveal-zoom delay-300">
-            <img src="assets/images/auto-interior.jpg" alt="Interior Auto Branding Commuter Ads" class="showcase-img" loading="lazy">
-            <div class="showcase-overlay">
-              <span class="showcase-badge">Interior &amp; Hood</span>
-              <h3 class="showcase-title">Engaged Commuter Ads</h3>
-              <p style="color: #CBD5E1; font-size: 0.9rem;">Direct captive attention for 15-30 minute average passenger ride times.</p>
-              <a href="auto-branding.html" class="showcase-link">View Campaign <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <!-- Item 4: Wide Fleet Transit -->
-          <div class="showcase-item item-wide reveal-zoom delay-400">
-            <img src="assets/images/fleet-transit.jpg" alt="Multi-vehicle Fleet Advertising Hyderabad Flyover" class="showcase-img" loading="lazy">
-            <div class="showcase-overlay">
-              <span class="showcase-badge">Full Fleet Dominance</span>
-              <h3 class="showcase-title">Mass Fleet Corridor Campaigns</h3>
-              <p style="color: #CBD5E1; font-size: 0.95rem;">Simultaneous launch across 500+ autos creating inescapable city-wide brand buzz.</p>
-              <a href="clients.html" class="showcase-link">View Campaign <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         WHY RNR ADS SECTION (CLEAN WHITE)
-         ========================================================================== -->
-    <section class="section section-white" id="why-us">
-      <div class="container">
-        <div class="section-header-center reveal-fade-up">
-          <div class="eyebrow">
-            <i class="fa-solid fa-award"></i> The RNR Advantage
-          </div>
-          <h2 class="section-heading section-heading-light">
-            WHY LEADING BRANDS CHOOSE <br>
-            <span class="text-cyan">RNR ADS</span>
-          </h2>
-          <p class="section-subtitle" style="margin: 0 auto;">
-            We combine large-scale operational fleet logistics with precision route mapping and top-tier fabrication for superior advertising outcomes.
-          </p>
-        </div>
-
-        <div class="why-grid">
-          <div class="why-card reveal-fade-up delay-100">
-            <div class="why-card-top">
-              <span class="why-num">01</span>
-              <div class="why-icon"><i class="fa-solid fa-globe"></i></div>
-            </div>
-            <h3 class="why-title">UNMATCHED REACH</h3>
-            <p class="why-desc">
-              Put your brand in front of hundreds of thousands of active pedestrians, motorists, and transit riders every day across Hyderabad.
-            </p>
-          </div>
-
-          <div class="why-card reveal-fade-up delay-200">
-            <div class="why-card-top">
-              <span class="why-num">02</span>
-              <div class="why-icon"><i class="fa-solid fa-eye"></i></div>
-            </div>
-            <h3 class="why-title">HIGH VISIBILITY</h3>
-            <p class="why-desc">
-              Eye-level placement guarantees your creative message cannot be skipped, blocked, or ignored during daily city commutes.
-            </p>
-          </div>
-
-          <div class="why-card reveal-fade-up delay-300">
-            <div class="why-card-top">
-              <span class="why-num">03</span>
-              <div class="why-icon"><i class="fa-solid fa-coins"></i></div>
-            </div>
-            <h3 class="why-title">COST EFFECTIVE</h3>
-            <p class="why-desc">
-              Achieve significantly lower CPM (cost per thousand impressions) compared to traditional static billboards or TV ads.
-            </p>
-          </div>
-
-          <div class="why-card reveal-fade-up delay-400">
-            <div class="why-card-top">
-              <span class="why-num">04</span>
-              <div class="why-icon"><i class="fa-solid fa-chart-pie"></i></div>
-            </div>
-            <h3 class="why-title">PROVEN RESULTS</h3>
-            <p class="why-desc">
-              Strategic route allocation and geotagged execution audit reports ensure complete accountability and measurable brand recall.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         CAMPAIGN EXPERIENCE SECTION (15+ YEARS)
-         ========================================================================== -->
-    <section class="section section-dark" id="experience">
-      <div class="container">
-        <div class="experience-wrap reveal-zoom">
-          <div class="watermark-number" aria-hidden="true">15+</div>
-          
-          <div class="experience-grid">
-            <div>
-              <div class="eyebrow eyebrow-light">
-                <i class="fa-solid fa-shield-halved"></i> Proven Track Record
-              </div>
-              <h2 class="section-heading section-heading-dark" style="margin-bottom: 1.5rem;">
-                15+ YEARS OF MAKING <br>
-                <span class="text-cyan">BRANDS VISIBLE.</span>
+              <h2 class="hero-heading">
+                YOUR BRAND.<br>
+                <span class="text-cyan">ON THE MOVE.</span>
               </h2>
-              <p style="color: #CBD5E1; font-size: 1.05rem; line-height: 1.7; margin-bottom: 1.5rem;">
-                With over a decade and a half of dedicated expertise in Hyderabad's outdoor advertising ecosystem, RNR Ads delivers practical, scalable, and high-impact transit media campaigns that turn city travelers into loyal customers.
+              <p class="hero-desc">
+                Turn everyday auto rickshaws into high-impact moving billboards across Hyderabad's busiest commercial
+                hotspots.
               </p>
-              <p style="color: #94A3B8; font-size: 0.95rem; line-height: 1.6; margin-bottom: 2.25rem;">
-                Our seasoned team handles the entire lifecycle: premium UV-resistant vinyl printing, rigorous vehicle installation, driver network management, and real-time campaign tracking.
+              <div class="hero-btn-group">
+                <button type="button" class="btn-cyan" data-bs-toggle="modal" data-bs-target="#quoteModal">
+                  GET A QUOTE <i class="fa-solid fa-arrow-right btn-arrow"></i>
+                </button>
+                <a href="auto-branding.html" class="btn-outline-white">
+                  EXPLORE FORMATS <i class="fa-solid fa-arrow-right btn-arrow"></i>
+                </a>
+              </div>
+              <div class="hero-stats-row">
+                <div class="hero-stat-item">
+                  <span class="hero-stat-number counter-value" data-target="5000" data-suffix="+">5,000+</span>
+                  <span class="hero-stat-label">Advertising Vehicles</span>
+                </div>
+                <div class="hero-stat-item">
+                  <span class="hero-stat-number">Hyderabad</span>
+                  <span class="hero-stat-label">City Coverage</span>
+                </div>
+                <div class="hero-stat-item">
+                  <span class="hero-stat-number counter-value" data-target="15" data-suffix="+">15+</span>
+                  <span class="hero-stat-label">Years Experience</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 3 -->
+        <div class="swiper-slide hero-slide" style="background-image: url('assets/images/hero-slide-3.jpg');">
+          <div class="hero-overlay"></div>
+          <div class="container-custom">
+            <div class="hero-content">
+              <div class="hero-badge">
+                <span class="pulse-dot"></span>
+                REAL BRANDS • REAL IMPACT
+              </div>
+              <h2 class="hero-heading">
+                GET NOTICED<br>
+                <span class="text-cyan">WHERE HYDERABAD MOVES.</span>
+              </h2>
+              <p class="hero-desc">
+                Reach customers across busy streets and high-traffic areas with strategic outdoor auto advertising
+                campaigns.
               </p>
-              <a href="#quoteModal" class="btn btn-primary btn-quote-popup">
-                <span>Start Your Campaign</span>
-                <i class="fa-solid fa-arrow-right"></i>
-              </a>
-            </div>
-
-            <div class="experience-image-card">
-              <img src="assets/images/auto-branding-rear.jpg" alt="15 Years of Outdoor Advertising Excellence Hyderabad" loading="lazy">
+              <div class="hero-btn-group">
+                <button type="button" class="btn-cyan" data-bs-toggle="modal" data-bs-target="#quoteModal">
+                  GET A QUOTE <i class="fa-solid fa-arrow-right btn-arrow"></i>
+                </button>
+                <a href="clients.html" class="btn-outline-white">
+                  VIEW PORTFOLIO <i class="fa-solid fa-arrow-right btn-arrow"></i>
+                </a>
+              </div>
+              <div class="hero-stats-row">
+                <div class="hero-stat-item">
+                  <span class="hero-stat-number counter-value" data-target="5000" data-suffix="+">5,000+</span>
+                  <span class="hero-stat-label">Advertising Vehicles</span>
+                </div>
+                <div class="hero-stat-item">
+                  <span class="hero-stat-number">Hyderabad</span>
+                  <span class="hero-stat-label">City Coverage</span>
+                </div>
+                <div class="hero-stat-item">
+                  <span class="hero-stat-number counter-value" data-target="15" data-suffix="+">15+</span>
+                  <span class="hero-stat-label">Years Experience</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+
+        <!-- SLIDE 4 -->
+        <div class="swiper-slide hero-slide" style="background-image: url('assets/images/hero-slide-4.jpg');">
+          <div class="hero-overlay"></div>
+          <div class="container-custom">
+            <div class="hero-content">
+              <div class="hero-badge">
+                <span class="pulse-dot"></span>
+                360° HYDERABAD FLEET COVERAGE
+              </div>
+              <h2 class="hero-heading">
+                DOMINATE HYDERABAD<br>
+                <span class="text-cyan">HIGHWAYS & STREETS.</span>
+              </h2>
+              <p class="hero-desc">
+                Target prime commercial zones from HITEC City and Gachibowli to Secunderabad with high-frequency fleet campaigns.
+              </p>
+              <div class="hero-btn-group">
+                <button type="button" class="btn-cyan" data-bs-toggle="modal" data-bs-target="#quoteModal">
+                  GET A QUOTE <i class="fa-solid fa-arrow-right btn-arrow"></i>
+                </button>
+                <a href="auto-branding.html" class="btn-outline-white">
+                  OUR SERVICES <i class="fa-solid fa-arrow-right btn-arrow"></i>
+                </a>
+              </div>
+              <div class="hero-stats-row">
+                <div class="hero-stat-item">
+                  <span class="hero-stat-number counter-value" data-target="5000" data-suffix="+">5,000+</span>
+                  <span class="hero-stat-label">Advertising Vehicles</span>
+                </div>
+                <div class="hero-stat-item">
+                  <span class="hero-stat-number">Hyderabad</span>
+                  <span class="hero-stat-label">City Coverage</span>
+                </div>
+                <div class="hero-stat-item">
+                  <span class="hero-stat-number counter-value" data-target="15" data-suffix="+">15+</span>
+                  <span class="hero-stat-label">Years Experience</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 5 -->
+        <div class="swiper-slide hero-slide" style="background-image: url('assets/images/hero-slide-5.jpg');">
+          <div class="hero-overlay"></div>
+          <div class="container-custom">
+            <div class="hero-content">
+              <div class="hero-badge">
+                <span class="pulse-dot"></span>
+                MAXIMUM VISIBILITY • MAXIMUM ROI
+              </div>
+              <h2 class="hero-heading">
+                TRANSIT ADS THAT<br>
+                <span class="text-cyan">DRIVE REAL RESULTS.</span>
+              </h2>
+              <p class="hero-desc">
+                Cost-effective outdoor branding with 24/7 hyper-local visibility, generating millions of verified impressions every month.
+              </p>
+              <div class="hero-btn-group">
+                <button type="button" class="btn-cyan" data-bs-toggle="modal" data-bs-target="#quoteModal">
+                  GET A QUOTE <i class="fa-solid fa-arrow-right btn-arrow"></i>
+                </button>
+                <a href="clients.html" class="btn-outline-white">
+                  VIEW CLIENTS <i class="fa-solid fa-arrow-right btn-arrow"></i>
+                </a>
+              </div>
+              <div class="hero-stats-row">
+                <div class="hero-stat-item">
+                  <span class="hero-stat-number counter-value" data-target="5000" data-suffix="+">5,000+</span>
+                  <span class="hero-stat-label">Advertising Vehicles</span>
+                </div>
+                <div class="hero-stat-item">
+                  <span class="hero-stat-number">Hyderabad</span>
+                  <span class="hero-stat-label">City Coverage</span>
+                </div>
+                <div class="hero-stat-item">
+                  <span class="hero-stat-number counter-value" data-target="15" data-suffix="+">15+</span>
+                  <span class="hero-stat-label">Years Experience</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </section>
+      <!-- Slider Navigation Arrows -->
+      <div class="swiper-button-prev" aria-label="Previous Slide"></div>
+      <div class="swiper-button-next" aria-label="Next Slide"></div>
+      <!-- Slider Pagination Dots -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
 
-    <!-- ==========================================================================
-         PROCESS SECTION (HOW IT WORKS)
-         ========================================================================== -->
-    <section class="section section-light" id="process">
-      <div class="container">
-        <div class="section-header-center reveal-fade-up">
-          <div class="eyebrow">
-            <i class="fa-solid fa-gears"></i> Simple &amp; Fast Execution
-          </div>
-          <h2 class="section-heading section-heading-light">
-            HOW IT <span class="text-cyan">WORKS</span>
-          </h2>
-          <p class="section-subtitle" style="margin: 0 auto;">
-            From initial strategy discussion to having your branded fleet on Hyderabad roads in as little as 48 hours.
-          </p>
-        </div>
+  <!-- ============================================================
+       INTRODUCTION SECTION
+  ============================================================ -->
+  <section class="intro-section section-padding">
+    <div class="container-custom">
+      <div class="row align-items-center g-5">
 
-        <div class="process-grid">
-          <div class="process-step reveal-fade-up delay-100">
-            <div class="step-header">
-              <span class="step-num">01</span>
-              <div class="step-icon"><i class="fa-solid fa-comments"></i></div>
-            </div>
-            <h3 class="step-title">TELL US YOUR GOAL</h3>
-            <p class="step-desc">Share your target audience, preferred Hyderabad zones (IT Corridor, Central, North/South), and campaign timeframe.</p>
-          </div>
-
-          <div class="process-step reveal-fade-up delay-200">
-            <div class="step-header">
-              <span class="step-num">02</span>
-              <div class="step-icon"><i class="fa-solid fa-palette"></i></div>
-            </div>
-            <h3 class="step-title">CHOOSE YOUR FORMAT</h3>
-            <p class="step-desc">Select from Auto Rickshaw Hoods, Full Back Panels, TSRTC Bus Wraps, or mixed multi-vehicle transit media packages.</p>
-          </div>
-
-          <div class="process-step reveal-fade-up delay-300">
-            <div class="step-header">
-              <span class="step-num">03</span>
-              <div class="step-icon"><i class="fa-solid fa-truck-fast"></i></div>
-            </div>
-            <h3 class="step-title">WE LAUNCH THE FLEET</h3>
-            <p class="step-desc">Our production team handles high-definition printing and seamless professional application onto our verified vehicle network.</p>
-          </div>
-
-          <div class="process-step reveal-fade-up delay-400">
-            <div class="step-header">
-              <span class="step-num">04</span>
-              <div class="step-icon"><i class="fa-solid fa-chart-line"></i></div>
-            </div>
-            <h3 class="step-title">WATCH YOUR BRAND MOVE</h3>
-            <p class="step-desc">Receive geotagged photographic verification and witness your brand dominate Hyderabad's highest traffic streets.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         CLIENTS SECTION (CAROUSEL)
-         ========================================================================== -->
-    <section class="section section-white" id="clients">
-      <div class="container">
-        <div class="section-header-center reveal-fade-up">
-          <div class="eyebrow">
-            <i class="fa-solid fa-handshake"></i> Partnerships
-          </div>
-          <h2 class="section-heading section-heading-light">
-            TRUSTED BY <span class="text-cyan">LEADING BRANDS</span>
-          </h2>
-          <p class="section-subtitle" style="margin: 0 auto;">
-            From national conglomerates to fast-growing regional enterprises, leading brands rely on RNR Ads for high-visibility outdoor media.
-          </p>
-        </div>
-
-        <div class="swiper clients-swiper reveal-fade-up delay-200" style="padding-bottom: 2rem;">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="brand-slide-card">
-                <img src="assets/logos/havells.svg" alt="Havells Advertising Client">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="brand-slide-card">
-                <img src="assets/logos/gs-caltex.svg" alt="GS Caltex Lubricants Advertising Client">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="brand-slide-card">
-                <img src="assets/logos/finolex.svg" alt="Finolex Pipes Client">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="brand-slide-card">
-                <img src="assets/logos/medquest.svg" alt="MedQuest Diagnostics Client">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="brand-slide-card">
-                <img src="assets/logos/reliance.svg" alt="Reliance Digital & Retail Client">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="brand-slide-card">
-                <img src="assets/logos/swiggy.svg" alt="Swiggy Food Delivery Transit Client">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         CTA SECTION (FULL WIDTH BANNER)
-         ========================================================================== -->
-    <section class="cta-banner-section" id="cta-banner">
-      <div class="container">
-        <div class="cta-box-center reveal-fade-up">
-          <div class="eyebrow eyebrow-light" style="justify-content: center;">
-            <i class="fa-solid fa-fire"></i> Ready To Dominate The Streets?
-          </div>
-          <h2 class="hero-heading">
-            READY TO PUT <br>
-            <span class="text-cyan">YOUR BRAND IN MOTION?</span>
+        <!-- Left Content -->
+        <div class="col-lg-6 animate-fade-left">
+          <span class="section-label">WELCOME TO RNR ADS</span>
+          <h2 class="section-title">
+            YOUR BRAND.<br>
+            <span class="text-cyan">ON THE MOVE.</span>
           </h2>
           <p>
-            Let's create an outdoor advertising campaign that gets your brand noticed across Hyderabad with guaranteed reach and competitive agency pricing.
+            RNR Ads is a fast-growing outdoor advertising agency in Hyderabad, focused on auto rickshaw advertising. We
+            help brands connect with thousands of potential customers across the city through high-visibility outdoor
+            media.
           </p>
-          <div class="btn-group">
-            <a href="#quoteModal" class="btn btn-primary btn-quote-popup">
-              <span>Get a Custom Quote</span>
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
-            <a href="tel:+918143252345" class="btn btn-outline-white">
-              <i class="fa-solid fa-phone"></i>
-              <span>Call Media Specialist</span>
+          <p>
+            With an extensive fleet spanning every major locality from HITEC City, Banjara Hills, and Secunderabad to
+            Old City and Dilsukhnagar, we guarantee round-the-clock brand impressions at eye level.
+          </p>
+
+          <ul class="intro-feature-list">
+            <li class="intro-feature-item">
+              <i class="fa-solid fa-circle-check"></i> High-frequency daily impressions across peak traffic zones
+            </li>
+            <li class="intro-feature-item">
+              <i class="fa-solid fa-circle-check"></i> 100% genuine vehicle branding with tamper-proof vinyl wraps
+            </li>
+            <li class="intro-feature-item">
+              <i class="fa-solid fa-circle-check"></i> Transparent geotagged photo reporting and monitoring
+            </li>
+          </ul>
+
+          <div class="d-flex flex-wrap align-items-center gap-3 mt-4">
+            <button type="button" class="btn-cyan" data-bs-toggle="modal" data-bs-target="#quoteModal">
+              GET A QUOTE <i class="fa-solid fa-arrow-right btn-arrow"></i>
+            </button>
+            <a href="tel:+918143252345" class="btn-phone-link">
+              <i class="fa-solid fa-phone text-cyan"></i> +91 81432 52345
             </a>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- ==========================================================================
-         CONTACT / QUOTE SECTION
-         ========================================================================== -->
-    <section class="section section-light" id="quote-section">
-      <div class="container">
-        <div class="contact-grid">
-          <!-- Left Info Column -->
-          <div class="contact-info-card reveal-fade-left">
-            <div class="eyebrow">
-              <i class="fa-solid fa-headset"></i> Get In Touch
+        <!-- Right Image & Overlapping Stat Badge -->
+        <div class="col-lg-6 animate-fade-right">
+          <div class="intro-img-wrapper">
+            <img src="assets/images/intro-auto.jpg" alt="Branded Auto Rickshaw in Hyderabad" class="intro-img"
+              loading="lazy">
+            <div class="intro-floating-badge">
+              <div class="intro-badge-icon">
+                <i class="fa-solid fa-bullhorn"></i>
+              </div>
+              <div>
+                <div class="intro-badge-num counter-value" data-target="5000" data-suffix="+">5,000+</div>
+                <div class="intro-badge-text">Advertising Vehicles<br>Across Hyderabad</div>
+              </div>
             </div>
-            <h2 class="section-heading section-heading-light" style="font-size: 2.2rem;">
-              LET'S TALK ABOUT YOUR <br>
-              <span class="text-cyan">NEXT CAMPAIGN.</span>
-            </h2>
-            <p class="section-subtitle">
-              Have questions about route availability, fleet volume, or custom graphic formats? Our Hyderabad outdoor media consultants are here to help.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SERVICES SECTION
+  ============================================================ -->
+  <section class="services-section section-padding">
+    <div class="container-custom">
+      <!-- Section Header -->
+      <div class="text-center mb-5 animate-fade-up">
+        <span class="section-label">OUR SERVICES</span>
+        <h2 class="section-title">
+          Auto Rickshaw<br>Advertising Solutions
+        </h2>
+        <p class="section-subtitle">
+          Turn everyday auto rickshaws into moving billboards that give your brand maximum visibility in Hyderabad.
+        </p>
+      </div>
+
+      <!-- 4 Services Grid -->
+      <div class="row g-4">
+        <!-- CARD 1: Full Auto Branding -->
+        <div class="col-lg-3 col-md-6 col-12 animate-fade-up">
+          <div class="service-card">
+            <div class="service-card-img-wrap">
+              <img src="assets/images/service-auto-branding.jpg" alt="Auto Branding Hyderabad" class="service-card-img"
+                loading="lazy">
+              <span class="service-card-tag">Full Wrap</span>
+            </div>
+            <div class="service-card-body">
+              <div class="service-card-icon">
+                <i class="fa-solid fa-car"></i>
+              </div>
+              <h3 class="service-card-title">Auto Branding</h3>
+              <p class="service-card-text">
+                Complete hood, canopy, and side wrap branding that transforms auto rickshaws into 360° moving brand
+                showcases.
+              </p>
+              <a href="auto-branding.html#full-branding" class="service-card-link">
+                Learn More <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 2: Side Panel Ads -->
+        <div class="col-lg-3 col-md-6 col-12 animate-fade-up" style="transition-delay: 0.1s;">
+          <div class="service-card">
+            <div class="service-card-img-wrap">
+              <img src="assets/images/service-side-panel.jpg" alt="Side Panel Advertising" class="service-card-img"
+                loading="lazy">
+              <span class="service-card-tag">Side Panel</span>
+            </div>
+            <div class="service-card-body">
+              <div class="service-card-icon">
+                <i class="fa-solid fa-border-all"></i>
+              </div>
+              <h3 class="service-card-title">Side Panel Ads</h3>
+              <p class="service-card-text">
+                High-impact side panel vinyl ads directly visible to pedestrians, drivers, and commuters in parallel
+                traffic lanes.
+              </p>
+              <a href="auto-branding.html#side-panel" class="service-card-link">
+                Learn More <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 3: Rear Panel Ads -->
+        <div class="col-lg-3 col-md-6 col-12 animate-fade-up" style="transition-delay: 0.2s;">
+          <div class="service-card">
+            <div class="service-card-img-wrap">
+              <img src="assets/images/service-rear-panel.jpg" alt="Rear Panel Auto Ads" class="service-card-img"
+                loading="lazy">
+              <span class="service-card-tag">Rear Back</span>
+            </div>
+            <div class="service-card-body">
+              <div class="service-card-icon">
+                <i class="fa-solid fa-rectangle-ad"></i>
+              </div>
+              <h3 class="service-card-title">Rear Panel Ads</h3>
+              <p class="service-card-text">
+                Captive advertising on the back cover of auto rickshaws, commanding long dwell times at traffic signals
+                and junctions.
+              </p>
+              <a href="auto-branding.html#rear-panel" class="service-card-link">
+                Learn More <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 4: Campaign Planning -->
+        <div class="col-lg-3 col-md-6 col-12 animate-fade-up" style="transition-delay: 0.3s;">
+          <div class="service-card">
+            <div class="service-card-img-wrap">
+              <img src="assets/images/service-campaign-planning.jpg" alt="Auto Advertising Campaign Planning"
+                class="service-card-img" loading="lazy">
+              <span class="service-card-tag">Campaign Fleet</span>
+            </div>
+            <div class="service-card-body">
+              <div class="service-card-icon">
+                <i class="fa-solid fa-route"></i>
+              </div>
+              <h3 class="service-card-title">Campaign Planning</h3>
+              <p class="service-card-text">
+                End-to-end route targeting, fleet scaling, geotagged proof of execution, and maintenance throughout
+                Hyderabad.
+              </p>
+              <a href="auto-branding.html#campaign-planning" class="service-card-link">
+                Learn More <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FEATURED WORK / GALLERY (DARK NAVY)
+  ============================================================ */
+  -->
+  <section class="featured-work-section section-padding">
+    <div class="container-custom">
+      <div class="row align-items-end justify-content-between mb-5">
+        <div class="col-lg-7 animate-fade-left">
+          <span class="section-label light">FEATURED CAMPAIGNS</span>
+          <h2 class="section-title light">
+            REAL BRANDS.<br>
+            <span class="text-cyan">REAL IMPACT.</span>
+          </h2>
+          <p class="section-subtitle light ms-0">
+            Explore recent auto rickshaw advertising campaigns across Hyderabad and see how brands are getting noticed.
+          </p>
+        </div>
+        <div class="col-lg-5 text-lg-end mt-4 mt-lg-0 animate-fade-right">
+          <a href="clients.html" class="btn-cyan">
+            VIEW GALLERY <i class="fa-solid fa-arrow-right btn-arrow"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- 5 Gallery Items Grid -->
+      <div class="gallery-grid">
+        <!-- 1. Education -->
+        <div class="gallery-item col-span-4 animate-fade-up">
+          <img src="assets/images/gallery-education.jpg" alt="Education Campaign Auto Ads" loading="lazy">
+          <div class="gallery-item-overlay">
+            <span class="gallery-category-badge">
+              Education <i class="fa-solid fa-arrow-right"></i>
+            </span>
+            <h3 class="gallery-title">Achievers Coaching Academy</h3>
+          </div>
+        </div>
+
+        <!-- 2. FMCG -->
+        <div class="gallery-item col-span-4 animate-fade-up" style="transition-delay: 0.1s;">
+          <img src="assets/images/gallery-fmcg.jpg" alt="FMCG Brand Auto Ads" loading="lazy">
+          <div class="gallery-item-overlay">
+            <span class="gallery-category-badge">
+              FMCG <i class="fa-solid fa-arrow-right"></i>
+            </span>
+            <h3 class="gallery-title">Beverage & FMCG Blitz</h3>
+          </div>
+        </div>
+
+        <!-- 3. E-Commerce -->
+        <div class="gallery-item col-span-4 animate-fade-up" style="transition-delay: 0.2s;">
+          <img src="assets/images/gallery-ecommerce.jpg" alt="E-Commerce Delivery Auto Ads" loading="lazy">
+          <div class="gallery-item-overlay">
+            <span class="gallery-category-badge">
+              E-Commerce <i class="fa-solid fa-arrow-right"></i>
+            </span>
+            <h3 class="gallery-title">Mega-Shop Delivery Launch</h3>
+          </div>
+        </div>
+
+        <!-- 4. Radio -->
+        <div class="gallery-item col-span-6 animate-fade-up" style="transition-delay: 0.3s;">
+          <img src="assets/images/gallery-radio.jpg" alt="Radio Campaign Auto Ads" loading="lazy">
+          <div class="gallery-item-overlay">
+            <span class="gallery-category-badge">
+              Radio <i class="fa-solid fa-arrow-right"></i>
+            </span>
+            <h3 class="gallery-title">93.5 Red FM City Campaign</h3>
+          </div>
+        </div>
+
+        <!-- 5. Brand Campaign -->
+        <div class="gallery-item col-span-6 animate-fade-up" style="transition-delay: 0.4s;">
+          <img src="assets/images/gallery-brand.jpg" alt="Telecom & Brand Campaign Auto Ads" loading="lazy">
+          <div class="gallery-item-overlay">
+            <span class="gallery-category-badge">
+              Brand Campaign <i class="fa-solid fa-arrow-right"></i>
+            </span>
+            <h3 class="gallery-title">Hospitality & Food Wrap</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       WHY CHOOSE RNR ADS
+  ============================================================ -->
+  <section class="why-choose-section section-padding">
+    <div class="container-custom">
+      <div class="text-center mb-5 animate-fade-up">
+        <span class="section-label">WHY CHOOSE US</span>
+        <h2 class="section-title">
+          Why Leading Brands<br>Choose RNR Ads
+        </h2>
+        <p class="section-subtitle">
+          We deliver impactful outdoor advertising that helps your brand get noticed, remembered and grow in Hyderabad.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- 1. UNMATCHED REACH -->
+        <div class="col-lg-3 col-md-6 col-12 animate-fade-up">
+          <div class="why-card">
+            <div class="why-icon-wrap">
+              <i class="fa-solid fa-network-wired"></i>
+            </div>
+            <h3 class="why-card-title">UNMATCHED REACH</h3>
+            <p class="why-card-text">
+              Over 5,000 vehicles provide citywide visibility across all major commercial and residential hubs.
             </p>
+          </div>
+        </div>
 
-            <div class="info-items-list">
-              <div class="info-item">
-                <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+        <!-- 2. HIGH VISIBILITY -->
+        <div class="col-lg-3 col-md-6 col-12 animate-fade-up" style="transition-delay: 0.1s;">
+          <div class="why-card">
+            <div class="why-icon-wrap">
+              <i class="fa-solid fa-eye"></i>
+            </div>
+            <h3 class="why-card-title">HIGH VISIBILITY</h3>
+            <p class="why-card-text">
+              Reach customers in busy streets, metro corridors, commercial zones, and high-traffic bottlenecks.
+            </p>
+          </div>
+        </div>
+
+        <!-- 3. COST EFFECTIVE -->
+        <div class="col-lg-3 col-md-6 col-12 animate-fade-up" style="transition-delay: 0.2s;">
+          <div class="why-card">
+            <div class="why-icon-wrap">
+              <i class="fa-solid fa-hand-holding-dollar"></i>
+            </div>
+            <h3 class="why-card-title">COST EFFECTIVE</h3>
+            <p class="why-card-text">
+              Maximum brand exposure within your advertising budget with the lowest CPM in outdoor advertising.
+            </p>
+          </div>
+        </div>
+
+        <!-- 4. PROVEN RESULTS -->
+        <div class="col-lg-3 col-md-6 col-12 animate-fade-up" style="transition-delay: 0.3s;">
+          <div class="why-card">
+            <div class="why-icon-wrap">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <h3 class="why-card-title">PROVEN RESULTS</h3>
+            <p class="why-card-text">
+              Innovative campaigns designed to deliver measurable brand recall and solid business outcomes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       EXPERIENCE SECTION (15+ YEARS)
+  ============================================================ -->
+  <section class="experience-section section-padding">
+    <!-- Big 15+ Watermark -->
+    <div class="exp-watermark">15+</div>
+
+    <div class="container-custom">
+      <div class="row align-items-center g-5">
+        <!-- Left Content -->
+        <div class="col-lg-6 exp-content animate-fade-left">
+          <span class="section-label light">15+ YEARS EXPERIENCE</span>
+          <h2 class="section-title light">
+            15+ YEARS<br>
+            <span class="text-bright-cyan">OF MAKING BRANDS VISIBLE.</span>
+          </h2>
+          <p class="text-white opacity-75 mt-3 mb-4 fs-5">
+            With 15+ years in Hyderabad's auto advertising, RNR Ads delivers cutting-edge, cost-effective solutions to
+            boost your brand's visibility and reputation across all communities.
+          </p>
+          <div class="row g-3 mb-4">
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center gap-3">
+                <i class="fa-solid fa-award text-bright-cyan fs-3"></i>
                 <div>
-                  <div class="info-label">Headquarters</div>
-                  <div class="info-val">413, 4th Floor, Kubera Towers, Narayanaguda, Hyderabad - 500029, Telangana</div>
+                  <h4 class="text-white fw-bold mb-0 fs-6">100% Verified</h4>
+                  <small class="text-white opacity-50">Tamper-Proof Media</small>
                 </div>
               </div>
-
-              <div class="info-item">
-                <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center gap-3">
+                <i class="fa-solid fa-shield-halved text-bright-cyan fs-3"></i>
                 <div>
-                  <div class="info-label">Direct Phone / WhatsApp</div>
-                  <div class="info-val"><a href="tel:+918143252345" class="hover-color-accent">+91 81432 52345</a></div>
-                </div>
-              </div>
-
-              <div class="info-item">
-                <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
-                <div>
-                  <div class="info-label">Email Inquiries</div>
-                  <div class="info-val"><a href="mailto:rnrads.hyd@gmail.com">rnrads.hyd@gmail.com</a></div>
-                </div>
-              </div>
-
-              <div class="info-item">
-                <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
-                <div>
-                  <div class="info-label">Operations &amp; Support</div>
-                  <div class="info-val">Monday – Saturday: 9:00 AM – 7:30 PM IST</div>
+                  <h4 class="text-white fw-bold mb-0 fs-6">Complete Audit</h4>
+                  <small class="text-white opacity-50">Geo-Tagged Proof</small>
                 </div>
               </div>
             </div>
           </div>
+          <a href="contact.html" class="btn-cyan">
+            START YOUR CAMPAIGN <i class="fa-solid fa-arrow-right btn-arrow"></i>
+          </a>
+        </div>
 
-          <!-- Right Form Column -->
-          <div class="contact-form-card reveal-fade-right">
-            <h3 style="font-size: 1.5rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem;">Request Campaign Quotation</h3>
-            <p style="color: var(--color-text-muted); margin-bottom: 2rem; font-size: 0.95rem;">Fill out the details below and receive a detailed media plan within 2 hours.</p>
+        <!-- Right Auto Image -->
+        <div class="col-lg-6 animate-fade-right">
+          <div class="exp-img-wrap">
+            <img src="assets/images/experience-auto.jpg" alt="15 Years of Auto Advertising in Hyderabad" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            <form class="rnr-quote-form" action="#" method="POST">
-              <div class="form-row">
-                <div class="form-group">
-                  <label class="form-label" for="contact-name">Full Name *</label>
-                  <input type="text" id="contact-name" class="form-control" placeholder="e.g. Rahul Sharma" required>
+  <!-- ============================================================
+       CLIENTS LOGO CAROUSEL
+  ============================================================ -->
+  <section class="clients-section section-padding">
+    <div class="container-custom">
+      <div class="text-center mb-4 animate-fade-up">
+        <span class="section-label">OUR CLIENTS</span>
+        <h2 class="section-title">
+          Trusted by Brands<br>Across Hyderabad
+        </h2>
+      </div>
+
+      <!-- Swiper Logo Carousel -->
+      <div class="swiper clients-swiper animate-fade-up">
+        <div class="swiper-wrapper align-items-center">
+          <div class="swiper-slide client-logo-slide">
+            <img src="assets/clients/havells.png" alt="Havells" class="client-logo-img">
+          </div>
+          <div class="swiper-slide client-logo-slide">
+            <img src="assets/clients/augmont gold.png" alt="Augmont Gold" class="client-logo-img">
+          </div>
+          <div class="swiper-slide client-logo-slide">
+            <img src="assets/clients/time.jpg" alt="T.I.M.E." class="client-logo-img">
+          </div>
+          <div class="swiper-slide client-logo-slide">
+            <img src="assets/clients/sundaram finance.jpg" alt="Sundaram Finance" class="client-logo-img">
+          </div>
+          <div class="swiper-slide client-logo-slide">
+            <img src="assets/clients/homefirst.jpg" alt="HomeFirst" class="client-logo-img">
+          </div>
+          <div class="swiper-slide client-logo-slide">
+            <img src="assets/clients/fybros.webp" alt="Fybros" class="client-logo-img">
+          </div>
+          <div class="swiper-slide client-logo-slide">
+            <img src="assets/clients/gate forum.png" alt="Gate Forum" class="client-logo-img">
+          </div>
+          <div class="swiper-slide client-logo-slide">
+            <img src="assets/clients/gs cal tex.png" alt="GS Caltex" class="client-logo-img">
+          </div>
+          <div class="swiper-slide client-logo-slide">
+            <img src="assets/clients/esha IVF.jpg" alt="Esha IVF" class="client-logo-img">
+          </div>
+          <div class="swiper-slide client-logo-slide">
+            <img src="assets/clients/capital now.png" alt="Capital Now" class="client-logo-img">
+          </div>
+          <div class="swiper-slide client-logo-slide">
+            <img src="assets/clients/aeriblu.png" alt="Aeriblu" class="client-logo-img">
+          </div>
+          <div class="swiper-slide client-logo-slide">
+            <img src="assets/clients/Manhattan-Review-Test-Prep.jpg" alt="Manhattan Review" class="client-logo-img">
+          </div>
+          <div class="swiper-slide client-logo-slide">
+            <img src="assets/clients/casa.jpg" alt="Casa" class="client-logo-img">
+          </div>
+          <div class="swiper-slide client-logo-slide">
+            <img src="assets/clients/medquest.webp" alt="Medquest" class="client-logo-img">
+          </div>
+          <div class="swiper-slide client-logo-slide">
+            <img src="assets/clients/fizikem.jpg" alt="Fizikem" class="client-logo-img">
+          </div>
+          <div class="swiper-slide client-logo-slide">
+            <img src="assets/clients/vani.png" alt="Vani" class="client-logo-img">
+          </div>
+          <div class="swiper-slide client-logo-slide">
+            <img src="assets/clients/Hair creations.png" alt="Hair Creations" class="client-logo-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT CTA SECTION (LIGHT BLUE BG)
+  ============================================================ -->
+  <section class="contact-cta-section section-padding" id="contactSection">
+    <div class="container-custom">
+      <div class="row g-5 align-items-center">
+
+        <!-- Left: Contact Details -->
+        <div class="col-lg-5 animate-fade-left">
+          <div class="contact-info-card">
+            <span class="section-label">GET IN TOUCH</span>
+            <h2 class="section-title">
+              Let's Talk About<br>Your Next Campaign.
+            </h2>
+            <p>
+              Discover how RNR Ads can transform your brand's visibility with creative and impactful outdoor
+              advertising. Contact us today!
+            </p>
+
+            <div class="contact-detail-list">
+              <!-- Address -->
+              <div class="contact-detail-item">
+                <div class="contact-detail-icon">
+                  <i class="fa-solid fa-location-dot"></i>
                 </div>
-                <div class="form-group">
-                  <label class="form-label" for="contact-company">Company / Brand *</label>
-                  <input type="text" id="contact-company" class="form-control" placeholder="e.g. Havells India" required>
+                <div>
+                  <div class="contact-detail-title">Office Address</div>
+                  <div class="contact-detail-val">
+                    413, 4th Floor, Kubera Towers, Narayanguda, Hyderabad - 29
+                  </div>
                 </div>
               </div>
 
-              <div class="form-row">
-                <div class="form-group">
-                  <label class="form-label" for="contact-phone">Phone Number *</label>
-                  <input type="tel" id="contact-phone" class="form-control" placeholder="e.g. +91 98490 XXXXX" required>
+              <!-- Phone -->
+              <div class="contact-detail-item">
+                <div class="contact-detail-icon">
+                  <i class="fa-solid fa-phone"></i>
                 </div>
-                <div class="form-group">
-                  <label class="form-label" for="contact-email">Email Address *</label>
-                  <input type="email" id="contact-email" class="form-control" placeholder="e.g. rahul@brand.com" required>
+                <div>
+                  <div class="contact-detail-title">Phone Number</div>
+                  <div class="contact-detail-val">
+                    <a href="tel:+918143252345">+91 81432 52345</a>
+                  </div>
                 </div>
               </div>
 
-              <div class="form-group">
-                <label class="form-label" for="contact-type">Advertising Type *</label>
-                <select id="contact-type" class="form-control" required>
-                  <option value="" disabled selected>Select Media Format</option>
-                  <option value="auto-rickshaw">Auto Rickshaw Branding (Hood / Back / Side)</option>
-                  <option value="bus-branding">TSRTC City Bus Branding (Full Wrap / Side Panel)</option>
-                  <option value="transit-mixed">Mixed Fleet Transit Campaign (Auto + Bus)</option>
-                  <option value="other">Other Outdoor Advertising Format</option>
-                </select>
+              <!-- Email -->
+              <div class="contact-detail-item">
+                <div class="contact-detail-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                  <div class="contact-detail-title">Email Address</div>
+                  <div class="contact-detail-val">
+                    <a href="mailto:rnrads.hyd@gmail.com">rnrads.hyd@gmail.com</a>
+                  </div>
+                </div>
               </div>
 
-              <div class="form-group">
-                <label class="form-label" for="contact-message">Campaign Details &amp; Target Locations</label>
-                <textarea id="contact-message" class="form-control" placeholder="Specify expected fleet size, target zones in Hyderabad, and campaign launch date..."></textarea>
+              <!-- Working Hours -->
+              <div class="contact-detail-item">
+                <div class="contact-detail-icon">
+                  <i class="fa-solid fa-clock"></i>
+                </div>
+                <div>
+                  <div class="contact-detail-title">Working Hours</div>
+                  <div class="contact-detail-val">
+                    Mon - Sat : 9:00 AM - 6:00 PM
+                  </div>
+                </div>
               </div>
+            </div>
+          </div>
+        </div>
 
-              <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1.1rem;">
-                <span>SEND ENQUIRY</span>
-                <i class="fa-solid fa-paper-plane"></i>
-              </button>
+        <!-- Right: Contact Form Card -->
+        <div class="col-lg-7 animate-fade-right">
+          <div class="contact-form-card">
+            <h3 class="fw-bold mb-3 fs-4 text-navy">Request a Free Campaign Proposal</h3>
+            <p class="text-muted mb-4 small">Fill in the details below to receive a custom rate card and coverage plan
+              for Hyderabad.</p>
+
+            <!-- Success Alert Banner -->
+            <div class="form-success-banner" role="alert">
+              <i class="fa-solid fa-circle-check me-2"></i>
+              Thank you! Your enquiry has been received. Our Hyderabad advertising strategist will contact you within 2
+              hours.
+            </div>
+
+            <form class="rnr-contact-form" novalidate>
+              <div class="row g-3">
+
+                <!-- Name -->
+                <div class="col-md-6">
+                  <label class="form-label form-label-custom" for="contactName">Full Name *</label>
+                  <input type="text" class="form-control form-control-custom" id="contactName" name="name"
+                    placeholder="e.g. Rahul Sharma" required>
+                  <div class="invalid-feedback-custom">Please enter your full name.</div>
+                </div>
+
+                <!-- Phone -->
+                <div class="col-md-6">
+                  <label class="form-label form-label-custom" for="contactPhone">Phone Number *</label>
+                  <input type="tel" class="form-control form-control-custom" id="contactPhone" name="phone"
+                    placeholder="+91 98765 43210" required>
+                  <div class="invalid-feedback-custom">Please enter a valid contact phone number.</div>
+                </div>
+
+                <!-- Email -->
+                <div class="col-md-6">
+                  <label class="form-label form-label-custom" for="contactEmail">Email Address *</label>
+                  <input type="email" class="form-control form-control-custom" id="contactEmail" name="email"
+                    placeholder="name@company.com" required>
+                  <div class="invalid-feedback-custom">Please enter a valid email address.</div>
+                </div>
+
+                <!-- Advertising Type -->
+                <div class="col-md-6">
+                  <label class="form-label form-label-custom" for="contactService">Advertising Type *</label>
+                  <select class="form-select form-select-custom" id="contactService" name="service" required>
+                    <option value="" selected disabled>Select Advertising Option</option>
+                    <option value="Auto Branding">Full Auto Branding</option>
+                    <option value="Side Panel Advertising">Side Panel Advertising</option>
+                    <option value="Rear Panel Advertising">Rear Panel Advertising</option>
+                    <option value="Full Auto Branding">Full Auto Branding</option>
+                    <option value="Campaign Planning">Campaign Planning & Fleet Target</option>
+                  </select>
+                  <div class="invalid-feedback-custom">Please select an advertising type.</div>
+                </div>
+
+                <!-- Message -->
+                <div class="col-12">
+                  <label class="form-label form-label-custom" for="contactMessage">Message / Target Localities *</label>
+                  <textarea class="form-control form-control-custom" id="contactMessage" name="message" rows="4"
+                    placeholder="Tell us about your brand, target areas in Hyderabad, or campaign duration..."
+                    required></textarea>
+                  <div class="invalid-feedback-custom">Please provide details about your campaign requirements.</div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn-cyan w-100 py-3 fs-6">
+                    SEND ENQUIRY <i class="fa-solid fa-arrow-right btn-arrow"></i>
+                  </button>
+                </div>
+
+              </div>
             </form>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
 
-  <!-- ==========================================================================
-       FOOTER
-       ========================================================================== -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER (DARK NAVY)
+  ============================================================ -->
   <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="index.html" class="footer-logo-wrap" aria-label="RNR Ads Home">
-            <img src="assets/logos/logo-RNR.png" alt="RNR Ads Outdoor Advertising" width="180" height="42">
-          </a>
-          <p>
-            RNR Ads is Hyderabad's premier outdoor transit media agency. Empowering brands with unmatched visibility across 5,000+ auto-rickshaws and city buses.
+    <div class="container-custom">
+      <div class="row g-4">
+
+        <!-- Column 1: Brand Info -->
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-logo-wrap">
+            <img src="assets/logo/RNR-main-logo.png" alt="RNR ADS Logo" class="footer-logo-img">
+          </div>
+          <p class="footer-desc">
+            RNR Ads is Hyderabad's premier outdoor transit advertising agency specializing exclusively in high-impact
+            auto rickshaw branding. We turn everyday city commutes into unmatched brand visibility.
           </p>
-          <div class="social-links" style="margin-top: 1.5rem;">
-            <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" class="social-btn" aria-label="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+          <div class="footer-social-bar">
+            <a href="#" class="footer-social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
           </div>
         </div>
 
-        <!-- Col 2: Quick Links -->
-        <div>
-          <h4 class="footer-col-title">Quick Links</h4>
-          <ul class="footer-links">
-            <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> <span>Home</span></a></li>
-            <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> <span>About Us</span></a></li>
-            <li><a href="clients.html"><i class="fa-solid fa-chevron-right"></i> <span>Clients &amp; Showcase</span></a></li>
-            <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> <span>Contact Us</span></a></li>
+        <!-- Column 2: Quick Links -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html"><i class="fa-solid fa-chevron-right text-cyan fs-xs"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-chevron-right text-cyan fs-xs"></i> About Us</a></li>
+            <li><a href="auto-ads.html"><i class="fa-solid fa-chevron-right text-cyan fs-xs"></i> Auto Ads</a></li>
+            <li><a href="auto-branding.html"><i class="fa-solid fa-chevron-right text-cyan fs-xs"></i> Auto Branding</a>
+            </li>
+            <li><a href="clients.html"><i class="fa-solid fa-chevron-right text-cyan fs-xs"></i> Clients</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-chevron-right text-cyan fs-xs"></i> Contact Us</a></li>
           </ul>
         </div>
 
-        <!-- Col 3: Advertising Services -->
-        <div>
-          <h4 class="footer-col-title">Media Solutions</h4>
-          <ul class="footer-links">
-            <li><a href="auto-branding.html"><i class="fa-solid fa-car-side"></i> <span>Auto Branding</span></a></li>
-            <li><a href="bus-branding.html"><i class="fa-solid fa-bus"></i> <span>Bus Branding</span></a></li>
-            <li><a href="auto-ads.html"><i class="fa-solid fa-rectangle-ad"></i> <span>Auto Ads</span></a></li>
-            <li><a href="bus-ads.html"><i class="fa-solid fa-panorama"></i> <span>Bus Ads</span></a></li>
+        <!-- Column 3: Our Services -->
+        <div class="col-lg-3 col-md-6 col-6">
+          <h4 class="footer-heading">Our Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="auto-branding.html#full-branding"><i class="fa-solid fa-chevron-right text-cyan fs-xs"></i>
+                Auto Branding</a></li>
+            <li><a href="auto-branding.html#side-panel"><i class="fa-solid fa-chevron-right text-cyan fs-xs"></i> Side
+                Panel Ads</a></li>
+            <li><a href="auto-branding.html#rear-panel"><i class="fa-solid fa-chevron-right text-cyan fs-xs"></i> Rear
+                Panel Ads</a></li>
+            <li><a href="auto-branding.html#campaign-planning"><i class="fa-solid fa-chevron-right text-cyan fs-xs"></i>
+                Campaign Planning</a></li>
           </ul>
         </div>
 
-        <!-- Col 4: Contact Info -->
-        <div>
-          <h4 class="footer-col-title">Our Company</h4>
-          <ul class="footer-links" style="gap: 1rem;">
-            <li style="display: flex; gap: 0.75rem;">
-              <i class="fa-solid fa-location-dot text-cyan" style="margin-top: 4px;"></i>
-              <span>413, 4th Floor, Kubera Towers, Narayanaguda, Hyderabad - 500029, Telangana</span>
-            </li>
-            <li style="display: flex; gap: 0.75rem;">
-              <i class="fa-solid fa-phone text-cyan"></i>
-              <a href="tel:+918143252345">+91 81432 52345</a>
-            </li>
-            <li style="display: flex; gap: 0.75rem;">
-              <i class="fa-solid fa-envelope text-cyan"></i>
-              <a href="mailto:rnrads.hyd@gmail.com">rnrads.hyd@gmail.com</a>
-            </li>
-          </ul>
+        <!-- Column 4: Our Company / Contact -->
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-heading">Our Company</h4>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>413, 4th Floor, Kubera Towers, Narayanguda, Hyderabad - 29</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+918143252345" class="text-white-50 hover-white">+91 81432 52345</a>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:rnrads.hyd@gmail.com" class="text-white-50 hover-white">rnrads.hyd@gmail.com</a>
+          </div>
         </div>
+
       </div>
 
-      <div class="footer-bottom">
-        <div>&copy; <span class="current-year">2026</span> RNR Ads. All Rights Reserved. Designed & Developed by <a href="https://sunseaz.com" target="_blank" rel="noopener noreferrer">Sunseaz</a>.</div>
-        <div style="display: flex; gap: 1.5rem;">
-          <a href="privacy-policy.html" style="color: #64748B;">Privacy Policy</a>
-          <a href="terms-of-service.html" style="color: #64748B;">Terms of Service</a>
-        </div>
+      <!-- Copyright Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>© <span class="current-year">2026</span> RNR Ads. All Rights Reserved. Designed and developed by <a
+            href="https://sunseaz.com/" target="_blank" rel="noopener noreferrer">Sunseaz</a></div>
       </div>
     </div>
   </footer>
 
-  <!-- ==========================================================================
-       FLOATING CONTACT ACTION BUTTONS (WHATSAPP + CALL)
-       ========================================================================== -->
-  <div class="floating-actions-container" aria-label="Quick contact actions">
-    <a href="https://wa.me/918143252345?text=Hi%20RNR%20Ads%2C%20I%20would%20like%20to%20inquire%20about%20outdoor%20advertising%20in%20Hyderabad" target="_blank" rel="noopener noreferrer" class="float-btn float-whatsapp" aria-label="Chat on WhatsApp">
-      <i class="fa-brands fa-whatsapp"></i>
-      <span class="float-tooltip">Chat on WhatsApp</span>
-    </a>
-    <a href="tel:+918143252345" class="float-btn float-call" aria-label="Call RNR Ads Now">
-      <i class="fa-solid fa-phone"></i>
-      <span class="float-tooltip">Call: +91 81432 52345</span>
-    </a>
-  </div>
+  <!-- ============================================================
+       FLOATING WHATSAPP BUTTON
+  ============================================================ -->
+  <a href="https://wa.me/918143252345?text=Hello%20RNR%20Ads,%20I%20am%20interested%20in%20Auto%20Rickshaw%20Advertising%20in%20Hyderabad."
+    target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
 
-  <!-- ==========================================================================
-       LEAD GENERATION QUOTE MODAL (POPUP)
-       ========================================================================== -->
-  <div class="modal-overlay" id="quoteModal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
-    <div class="modal-dialog">
-      <button class="modal-close-btn" aria-label="Close quote modal">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
+  <!-- ============================================================
+       BACK TO TOP BUTTON
+  ============================================================ -->
+  <button id="backToTop" class="back-to-top" aria-label="Scroll to Top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
 
-      <div class="modal-header">
-        <div class="eyebrow">
-          <i class="fa-solid fa-bolt"></i> FAST 2-HOUR RESPONSE
+  <!-- ============================================================
+       GET A QUOTE MODAL POPUP
+  ============================================================ -->
+  <div class="modal fade modal-quote" id="quoteModal" tabindex="-1" aria-labelledby="quoteModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header d-flex flex-column align-items-start">
+          <div class="d-flex align-items-center justify-content-between w-100 mb-2">
+            <div class="modal-quote-badge">
+              <i class="fa-solid fa-bolt text-cyan"></i> FAST RESPONSE • CUSTOM PRICING
+            </div>
+            <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <h3 class="modal-title" id="quoteModalLabel">Get An Instant Campaign Quote</h3>
+          <p class="modal-subtitle">Tell us about your advertising goals and our Hyderabad transit team will get back to you with custom fleet pricing.</p>
         </div>
-        <h3 class="modal-title" id="modalTitle">Request a Campaign Quote</h3>
-        <p class="modal-subtitle">Share your target requirements and receive a customized route media plan with transparent rates.</p>
+        <div class="modal-body">
+          <form id="quoteModalForm" class="needs-validation" novalidate>
+            <div id="modalSuccessBanner" class="alert alert-success d-none mb-3" role="alert">
+              <i class="fa-solid fa-circle-check me-2"></i> <strong>Thank you!</strong> Your quote request has been submitted successfully. Our team will contact you within 2 hours.
+            </div>
+            <div class="row g-3">
+              <!-- Full Name -->
+              <div class="col-md-6">
+                <label for="modalFullName" class="form-label">Full Name <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="modalFullName" placeholder="e.g. Rahul Sharma" required>
+                <div class="invalid-feedback">Please provide your full name.</div>
+              </div>
+
+              <!-- Phone Number -->
+              <div class="col-md-6">
+                <label for="modalPhone" class="form-label">Phone Number <span class="text-danger">*</span></label>
+                <input type="tel" class="form-control" id="modalPhone" placeholder="+91 98765 43210" required>
+                <div class="invalid-feedback">Please provide a valid 10-digit phone number.</div>
+              </div>
+
+              <!-- Email Address -->
+              <div class="col-md-6">
+                <label for="modalEmail" class="form-label">Email Address <span class="text-danger">*</span></label>
+                <input type="email" class="form-control" id="modalEmail" placeholder="rahul@company.com" required>
+                <div class="invalid-feedback">Please enter a valid business email.</div>
+              </div>
+
+              <!-- Advertising Format -->
+              <div class="col-md-6">
+                <label for="modalService" class="form-label">Ad Format <span class="text-danger">*</span></label>
+                <select class="form-select" id="modalService" required>
+                  <option value="" selected disabled>Select format...</option>
+                  <option value="Full Auto Branding (360° Wrap)">Full Auto Branding (360° Wrap)</option>
+                  <option value="Rear Panel Hood Branding">Rear Panel Hood Branding</option>
+                  <option value="Side Panel Ads">Side Panel Ads</option>
+                  <option value="City-Wide Fleet Campaign">City-Wide Fleet Campaign</option>
+                </select>
+                <div class="invalid-feedback">Please select an ad format.</div>
+              </div>
+
+              <!-- Fleet Size -->
+              <div class="col-md-6">
+                <label for="modalFleet" class="form-label">Number of Autos</label>
+                <select class="form-select" id="modalFleet">
+                  <option value="25 - 50 Autos">25 – 50 Autos</option>
+                  <option value="50 - 100 Autos" selected>50 – 100 Autos (Popular)</option>
+                  <option value="100 - 250 Autos">100 – 250 Autos (High Reach)</option>
+                  <option value="250 - 500+ Autos">250 – 500+ Autos (City Dominance)</option>
+                </select>
+              </div>
+
+              <!-- Target Zone -->
+              <div class="col-md-6">
+                <label for="modalZone" class="form-label">Preferred Hyderabad Zone</label>
+                <select class="form-select" id="modalZone">
+                  <option value="All Hyderabad (City-Wide)" selected>All Hyderabad (City-Wide)</option>
+                  <option value="HITEC City, Madhapur & Gachibowli">HITEC City, Madhapur & Gachibowli</option>
+                  <option value="Secunderabad & Begumpet">Secunderabad & Begumpet</option>
+                  <option value="Ameerpet, Kukatpally & Miyapur">Ameerpet, Kukatpally & Miyapur</option>
+                  <option value="Dilsukhnagar & LB Nagar">Dilsukhnagar & LB Nagar</option>
+                  <option value="Banjara Hills & Jubilee Hills">Banjara Hills & Jubilee Hills</option>
+                </select>
+              </div>
+
+              <!-- Message / Details -->
+              <div class="col-12">
+                <label for="modalMessage" class="form-label">Campaign Details / Target Launch Date</label>
+                <textarea class="form-control" id="modalMessage" rows="2" placeholder="Describe your campaign goals, timing or special requirements..."></textarea>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="col-12 mt-3">
+                <button type="submit" class="btn-cyan w-100 py-3 fs-6">
+                  SUBMIT QUOTE REQUEST <i class="fa-solid fa-arrow-right btn-arrow"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <div class="modal-quote-footer-info">
+            <span><i class="fa-solid fa-shield-halved text-cyan me-1"></i> 100% Confidential • Fast Hyderabad Dispatch</span>
+            <a href="https://wa.me/918143252345?text=Hello%20RNR%20Ads,%20I%20would%20like%20a%20quote%20for%20Auto%20Rickshaw%20Advertising." target="_blank" rel="noopener noreferrer" class="modal-quote-whatsapp-link">
+              <i class="fa-brands fa-whatsapp text-success fs-5"></i> WhatsApp Direct
+            </a>
+          </div>
+        </div>
       </div>
-
-      <form class="rnr-quote-form" action="#" method="POST">
-        <div class="form-row">
-          <div class="form-group">
-            <label class="form-label" for="modal-name">Full Name *</label>
-            <input type="text" id="modal-name" class="form-control" placeholder="e.g. Rahul Sharma" required>
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="modal-company">Company / Brand *</label>
-            <input type="text" id="modal-company" class="form-control" placeholder="e.g. Havells / Startup" required>
-          </div>
-        </div>
-
-        <div class="form-row">
-          <div class="form-group">
-            <label class="form-label" for="modal-phone">Phone / WhatsApp *</label>
-            <input type="tel" id="modal-phone" class="form-control" placeholder="e.g. +91 81432 52345" required>
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="modal-email">Work Email *</label>
-            <input type="email" id="modal-email" class="form-control" placeholder="e.g. rahul@company.com" required>
-          </div>
-        </div>
-
-        <div class="form-row">
-          <div class="form-group">
-            <label class="form-label" for="modal-advertising-type">Advertising Medium *</label>
-            <select id="modal-advertising-type" class="form-control" required>
-              <option value="" disabled selected>Select Media Format</option>
-              <option value="auto-rickshaw">Auto Rickshaw Branding (Hood / Back / Side)</option>
-              <option value="bus-branding">TSRTC City Bus Branding (Full Wrap / Side)</option>
-              <option value="transit-mixed">Transit Mixed Fleet (Auto + Bus)</option>
-              <option value="other">Other Outdoor Advertising Format</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="modal-corridor">Target Hyderabad Corridor</label>
-            <select id="modal-corridor" class="form-control">
-              <option value="citywide">Entire Hyderabad & Secunderabad (Citywide)</option>
-              <option value="hitec-city">IT Corridor (HITEC City, Madhapur, Gachibowli)</option>
-              <option value="banjara-jubilee">Prime Commercial (Banjara Hills, Jubilee Hills)</option>
-              <option value="secunderabad-oldcity">High Density (Secunderabad, Old City, Koti)</option>
-              <option value="residential">Residential Growth (Kukatpally, LB Nagar, Miyapur)</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label class="form-label" for="modal-message">Estimated Fleet Size &amp; Campaign Goals</label>
-          <textarea id="modal-message" class="form-control" placeholder="e.g. Need 100 auto-rickshaws for 30 days starting next month..." style="min-height: 85px;"></textarea>
-        </div>
-
-        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1.05rem; font-size: 1rem;">
-          <span>SUBMIT QUOTE REQUEST</span>
-          <i class="fa-solid fa-paper-plane"></i>
-        </button>
-      </form>
     </div>
   </div>
 
-  <!-- Swiper.js Script -->
+  <!-- ============================================================
+       SCRIPTS (Bootstrap Bundle, Swiper.js, Custom Script)
+  ============================================================ -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <!-- Main Script -->
   <script src="js/script.js"></script>
 </body>
+
 </html>
