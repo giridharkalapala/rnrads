@@ -64,25 +64,39 @@
       <a class="navbar-brand navbar-brand-wrapper" href="index.html">
         <img src="assets/logo/RNR-main-logo.png" alt="RNR ADS Logo" class="brand-logo-img">
       </a>
-      <button class="navbar-toggler navbar-toggler-custom d-lg-none" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler navbar-toggler-custom d-lg-none" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav align-items-lg-center gap-lg-2">
-          <li class="nav-item"><a class="nav-link nav-link-custom" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link nav-link-custom" href="about.html">About Us</a></li>
-          <li class="nav-item"><a class="nav-link nav-link-custom" href="auto-ads.html">Auto Ads</a></li>
-          <li class="nav-item"><a class="nav-link nav-link-custom" href="auto-branding.html">Auto Branding</a></li>
-          <li class="nav-item"><a class="nav-link nav-link-custom" href="clients.html">Clients</a></li>
-          <li class="nav-item"><a class="nav-link nav-link-custom active" href="contact.html">Contact Us</a></li>
-        </ul>
-        <div class="ms-lg-4 mt-3 mt-lg-0">
-          <button type="button" class="btn-cyan nav-btn-quote" data-bs-toggle="modal" data-bs-target="#quoteModal">
-            GET A QUOTE <i class="fa-solid fa-arrow-right btn-arrow"></i>
-          </button>
+
+      <!-- Offcanvas Responsive Navigation Drawer -->
+      <div class="offcanvas offcanvas-end offcanvas-lg mobile-nav-offcanvas" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <!-- Offcanvas Header: Logo on top left, Close button on top right -->
+        <div class="offcanvas-header d-lg-none border-bottom pb-3">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/logo/RNR-main-logo.png" alt="RNR ADS Logo" class="brand-logo-img" style="height: 42px;">
+          </a>
+          <button type="button" class="btn-close mobile-offcanvas-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <!-- Offcanvas Body: Navigation Links below the logo -->
+        <div class="offcanvas-body d-flex flex-column flex-lg-row align-items-lg-center justify-content-lg-end p-4 p-lg-0">
+          <ul class="navbar-nav align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="auto-ads.html">Auto Ads</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="auto-branding.html">Auto Branding</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="clients.html">Clients</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom active" href="contact.html">Contact Us</a></li>
+          </ul>
+          <div class="ms-lg-4 mt-4 mt-lg-0">
+            <button type="button" class="btn-cyan nav-btn-quote w-100 w-lg-auto" data-bs-toggle="modal" data-bs-target="#quoteModal">
+              GET A QUOTE <i class="fa-solid fa-arrow-right btn-arrow"></i>
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -260,6 +274,87 @@
           </div>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP & LOCATION SECTION -->
+  <section class="section-padding bg-light-blue position-relative">
+    <div class="container-custom">
+      <div class="text-center mb-5 animate-fade-up">
+        <span class="section-label">VISIT OUR HYDERABAD OFFICE</span>
+        <h2 class="section-title">Find Us in Narayanguda</h2>
+        <p class="section-subtitle">Located centrally in Hyderabad for client strategy meetings and campaign planning sessions.</p>
+      </div>
+
+      <div class="row g-4 align-items-stretch">
+        <!-- Interactive Google Map -->
+        <div class="col-lg-8 animate-fade-up">
+          <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100 bg-white p-2 border">
+            <iframe
+              src="https://maps.google.com/maps?q=Kubera+Towers,+Narayanaguda,+Hyderabad,+Telangana+500029&t=&z=16&ie=UTF8&iwloc=&output=embed"
+              class="w-100 rounded-3 border-0"
+              style="min-height: 440px; height: 100%; display: block;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="RNR Ads Office Location - Kubera Towers Narayanaguda Hyderabad">
+            </iframe>
+          </div>
+        </div>
+
+        <!-- Office Quick Details Card -->
+        <div class="col-lg-4 animate-fade-up" style="transition-delay: 0.1s;">
+          <div class="card border-0 rounded-4 shadow-sm p-4 p-lg-5 h-100 d-flex flex-column justify-content-between" style="background: var(--navy); color: #ffffff;">
+            <div>
+              <div class="d-inline-flex align-items-center gap-2 px-3 py-1 rounded-pill mb-3" style="background: rgba(0, 169, 232, 0.15); color: var(--bright-cyan); font-size: 0.82rem; font-weight: 700; border: 1px solid rgba(0, 169, 232, 0.3);">
+                <i class="fa-solid fa-building"></i> Head Office
+              </div>
+              <h3 class="fw-bold text-white fs-4 mb-3">RNR ADS</h3>
+              <p class="text-white-50 mb-4 small" style="line-height: 1.7;">
+                Flat No: 413, 4th Floor, Kubera Towers, Narayanaguda, Hyderabad, Telangana 500029, India.
+              </p>
+
+              <hr class="border-secondary mb-4 opacity-50">
+
+              <div class="mb-3 d-flex align-items-start gap-3">
+                <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 38px; height: 38px; background: rgba(0, 169, 232, 0.2); color: var(--bright-cyan);">
+                  <i class="fa-solid fa-clock"></i>
+                </div>
+                <div>
+                  <div class="fw-bold text-white small">Working Hours</div>
+                  <div class="text-white-50 small">Monday – Saturday: 9:30 AM – 7:30 PM</div>
+                </div>
+              </div>
+
+              <div class="mb-3 d-flex align-items-start gap-3">
+                <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 38px; height: 38px; background: rgba(0, 169, 232, 0.2); color: var(--bright-cyan);">
+                  <i class="fa-solid fa-train-subway"></i>
+                </div>
+                <div>
+                  <div class="fw-bold text-white small">Nearest Metro</div>
+                  <div class="text-white-50 small">Narayanguda Metro Station (5 Mins)</div>
+                </div>
+              </div>
+
+              <div class="mb-4 d-flex align-items-start gap-3">
+                <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 38px; height: 38px; background: rgba(0, 169, 232, 0.2); color: var(--bright-cyan);">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div>
+                  <div class="fw-bold text-white small">Direct Phone</div>
+                  <div class="text-white-50 small">+91 81432 52345 / +91 99637 99763</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-2">
+              <a href="https://maps.google.com/?q=Kubera+Towers,+Narayanaguda,+Hyderabad,+Telangana+500029" target="_blank" rel="noopener noreferrer" class="btn btn-cyan w-100 py-3 fw-bold d-flex align-items-center justify-content-center gap-2">
+                <i class="fa-solid fa-location-arrow"></i> Get Directions on Maps
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>

@@ -61,18 +61,47 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   /* ============================================================
-     3. MOBILE NAVBAR COLLAPSE AUTO-CLOSE
+     3. MOBILE NAVBAR OFFCANVAS & COLLAPSE AUTO-CLOSE
   ============================================================ */
-  const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+  const navLinks = document.querySelectorAll(".navbar-nav .nav-link, .nav-btn-quote");
   const navCollapse = document.getElementById("navbarNav");
+  const navOffcanvas = document.getElementById("offcanvasNavbar");
+  const navToggler = document.querySelector(".navbar-toggler-custom");
+
+  // Handle Offcanvas mobile auto-close
+  if (navOffcanvas && window.bootstrap) {
+    const bsOffcanvas = bootstrap.Offcanvas.getOrCreateInstance(navOffcanvas);
+    const offcanvasLinks = navOffcanvas.querySelectorAll(".nav-link, .nav-btn-quote");
+    offcanvasLinks.forEach(function (link) {
+      link.addEventListener("click", function () {
+        bsOffcanvas.hide();
+      });
+    });
+  }
+
+  // Handle Collapse mobile auto-close fallback
   if (navCollapse && window.bootstrap) {
     const bsCollapse = new bootstrap.Collapse(navCollapse, { toggle: false });
+
+    // Auto-close on link / quote button click
     navLinks.forEach(function (link) {
       link.addEventListener("click", function () {
         if (navCollapse.classList.contains("show")) {
           bsCollapse.hide();
         }
       });
+    });
+
+    // Auto-close on click outside
+    document.addEventListener("click", function (event) {
+      if (
+        navCollapse.classList.contains("show") &&
+        !navCollapse.contains(event.target) &&
+        navToggler &&
+        !navToggler.contains(event.target)
+      ) {
+        bsCollapse.hide();
+      }
     });
   }
 

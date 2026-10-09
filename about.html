@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us | RNR Ads — Hyderabad's Leading Auto Rickshaw Media</title>
+  <title>About Us | RNR Ads — Hyderabad's Leading Auto Rickshaw Advertising Agency</title>
   <meta name="description"
-    content="Learn about RNR Ads, Hyderabad's premier outdoor transit advertising agency with 15+ years experience and 5,000+ auto rickshaws on the move daily.">
+    content="Learn about RNR Ads, Hyderabad's premier outdoor transit advertising agency with 15+ years experience, 5,000+ auto rickshaws, and 100% verified geotag audits.">
 
   <!-- Favicon Icons -->
   <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
@@ -22,6 +22,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
@@ -64,25 +65,39 @@
       <a class="navbar-brand navbar-brand-wrapper" href="index.html">
         <img src="assets/logo/RNR-main-logo.png" alt="RNR ADS Logo" class="brand-logo-img">
       </a>
-      <button class="navbar-toggler navbar-toggler-custom d-lg-none" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler navbar-toggler-custom d-lg-none" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav align-items-lg-center gap-lg-2">
-          <li class="nav-item"><a class="nav-link nav-link-custom" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link nav-link-custom active" href="about.html">About Us</a></li>
-          <li class="nav-item"><a class="nav-link nav-link-custom" href="auto-ads.html">Auto Ads</a></li>
-          <li class="nav-item"><a class="nav-link nav-link-custom" href="auto-branding.html">Auto Branding</a></li>
-          <li class="nav-item"><a class="nav-link nav-link-custom" href="clients.html">Clients</a></li>
-          <li class="nav-item"><a class="nav-link nav-link-custom" href="contact.html">Contact Us</a></li>
-        </ul>
-        <div class="ms-lg-4 mt-3 mt-lg-0">
-          <button type="button" class="btn-cyan nav-btn-quote" data-bs-toggle="modal" data-bs-target="#quoteModal">
-            GET A QUOTE <i class="fa-solid fa-arrow-right btn-arrow"></i>
-          </button>
+
+      <!-- Offcanvas Responsive Navigation Drawer -->
+      <div class="offcanvas offcanvas-end offcanvas-lg mobile-nav-offcanvas" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <!-- Offcanvas Header: Logo on top left, Close button on top right -->
+        <div class="offcanvas-header d-lg-none border-bottom pb-3">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/logo/RNR-main-logo.png" alt="RNR ADS Logo" class="brand-logo-img" style="height: 42px;">
+          </a>
+          <button type="button" class="btn-close mobile-offcanvas-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <!-- Offcanvas Body: Navigation Links below the logo -->
+        <div class="offcanvas-body d-flex flex-column flex-lg-row align-items-lg-center justify-content-lg-end p-4 p-lg-0">
+          <ul class="navbar-nav align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom active" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="auto-ads.html">Auto Ads</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="auto-branding.html">Auto Branding</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="clients.html">Clients</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="contact.html">Contact Us</a></li>
+          </ul>
+          <div class="ms-lg-4 mt-4 mt-lg-0">
+            <button type="button" class="btn-cyan nav-btn-quote w-100 w-lg-auto" data-bs-toggle="modal" data-bs-target="#quoteModal">
+              GET A QUOTE <i class="fa-solid fa-arrow-right btn-arrow"></i>
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -102,88 +117,319 @@
     </div>
   </section>
 
-  <!-- STORY SECTION -->
-  <section class="section-padding">
+  <!-- COMPANY STORY & EXECUTIVE OVERVIEW -->
+  <section class="section-padding bg-white">
     <div class="container-custom">
       <div class="row align-items-center g-5">
+        <!-- Story Text -->
         <div class="col-lg-6 animate-fade-left">
-          <span class="section-label">OUR LEGACY & MISSION</span>
+          <span class="section-label">OUR STORY & FOUNDATION</span>
           <h2 class="section-title">
-            15+ Years Driving Brand Recall<br>
-            <span class="text-cyan">Across Hyderabad.</span>
+            Hyderabad’s Lifeline.<br>
+            <span class="text-cyan">Your Brand’s Greatest Moving Canvas.</span>
           </h2>
-          <p>
-            Established with a vision to make outdoor advertising accessible, scalable, and hyper-targeted, RNR Ads has
-            evolved into Hyderabad's most dependable auto rickshaw advertising agency.
+          <p class="lead text-navy fw-semibold">
+            Founded with a commitment to make outdoor advertising transparent, hyper-targeted, and results-driven, RNR
+            Ads has grown into the Twin Cities' most trusted auto rickshaw transit media house.
           </p>
           <p>
-            Auto rickshaws are the true lifeline of Hyderabad's urban mobility. Navigating through every arterial road,
-            metro corridor, commercial avenue, and residential colony, our fleet of 5,000+ branded auto rickshaws
-            delivers millions of verified eye-level impressions each month.
+            In a fast-growing metropolis like Hyderabad, static hoardings are increasingly overlooked by commuters focused
+            on the road. Auto rickshaws, however, weave through every bustling commercial hub, tech park gate, arterial
+            flyover, and residential street — placing your brand message directly at eye-level where captive audiences
+            cannot look away.
+          </p>
+          <p>
+            By working directly with auto driver unions and maintaining dedicated operational hubs in 30+ strategic
+            localities, we eliminate middlemen markups and guarantee rapid campaign rollout with timestamped photographic
+            audits.
           </p>
 
-          <div class="row g-4 mt-3">
+          <div class="row g-3 mt-3 pt-3 border-top">
             <div class="col-sm-6">
-              <div class="p-3 bg-light-blue rounded-3 border">
-                <div class="fw-bold fs-3 text-cyan">5,000+</div>
-                <div class="fw-bold text-navy">Fleet Network</div>
-                <small class="text-muted">Direct auto driver network across 30+ hubs</small>
+              <div class="d-flex align-items-center gap-2">
+                <i class="fa-solid fa-circle-check text-cyan fs-5"></i>
+                <span class="fw-bold text-navy small">Zero Brokerage / Direct Fleet</span>
               </div>
             </div>
             <div class="col-sm-6">
-              <div class="p-3 bg-light-blue rounded-3 border">
-                <div class="fw-bold fs-3 text-cyan">100%</div>
-                <div class="fw-bold text-navy">Verified Execution</div>
-                <small class="text-muted">Geotagged photographic reporting</small>
+              <div class="d-flex align-items-center gap-2">
+                <i class="fa-solid fa-circle-check text-cyan fs-5"></i>
+                <span class="fw-bold text-navy small">High-Density Traffic Routes</span>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center gap-2">
+                <i class="fa-solid fa-circle-check text-cyan fs-5"></i>
+                <span class="fw-bold text-navy small">Premium Weatherproof Substrates</span>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center gap-2">
+                <i class="fa-solid fa-circle-check text-cyan fs-5"></i>
+                <span class="fw-bold text-navy small">Complete Geotagged Reporting</span>
               </div>
             </div>
           </div>
         </div>
 
+        <!-- Story Visual Composition -->
         <div class="col-lg-6 animate-fade-right">
-          <div class="intro-img-wrapper">
-            <img src="assets/images/intro-auto.jpg" alt="RNR Ads Auto Fleet Hyderabad" class="intro-img" loading="lazy">
+          <div class="story-media-box">
+            <div class="floating-badge-top">
+              <i class="fa-solid fa-shield-check text-cyan fs-5"></i>
+              <span>100% Geotag Verified</span>
+            </div>
+
+            <img src="assets/images/experience-auto.jpg" alt="RNR Ads Auto Fleet Operations Hyderabad" class="story-main-img"
+              loading="lazy">
+
+            <div class="floating-experience-card">
+              <div class="d-flex align-items-center gap-3">
+                <div class="fs-2 text-cyan fw-bold">15+</div>
+                <div>
+                  <div class="fw-bold text-white small">Years in Hyderabad</div>
+                  <div class="text-white-50 fs-xs">Trusted by 350+ corporate & retail brands</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- VALUES / WHY IT WORKS -->
+  <!-- MISSION, VISION & PROMISE -->
   <section class="section-padding bg-light-blue">
     <div class="container-custom">
       <div class="text-center mb-5 animate-fade-up">
-        <span class="section-label">CORE ADVANTAGES</span>
-        <h2 class="section-title">Why Auto Advertising Outperforms</h2>
-        <p class="section-subtitle">Auto rickshaw advertising offers undeniable visual supremacy and cost efficiency.
-        </p>
+        <span class="section-label">OUR GUIDING PRINCIPLES</span>
+        <h2 class="section-title">Built on Trust, Precision & Reach</h2>
+        <p class="section-subtitle">We don't just put up ads; we engineer high-impact outdoor visibility tailored to your business goals.</p>
       </div>
 
       <div class="row g-4">
+        <!-- Vision -->
         <div class="col-lg-4 col-md-6 animate-fade-up">
-          <div class="why-card">
-            <div class="why-icon-wrap"><i class="fa-solid fa-bullseye"></i></div>
-            <h3 class="why-card-title">Eye-Level Visual Dominance</h3>
-            <p class="why-card-text">Unlike sky-high billboards that drivers pass in a blink, auto ads are directly in
-              the driver's and pedestrian's eye-line in bumper-to-bumper traffic.</p>
+          <div class="mv-card">
+            <div class="mv-icon-box">
+              <i class="fa-solid fa-compass"></i>
+            </div>
+            <h3 class="fw-bold fs-5 text-navy mb-3">Our Vision</h3>
+            <p class="text-muted small mb-0">
+              To be South India's premier and most accountable transit advertising network, transforming everyday urban
+              commutes into memorable brand discoveries through cutting-edge outdoor media planning.
+            </p>
           </div>
         </div>
 
+        <!-- Mission -->
         <div class="col-lg-4 col-md-6 animate-fade-up" style="transition-delay: 0.1s;">
-          <div class="why-card">
+          <div class="mv-card">
+            <div class="mv-icon-box">
+              <i class="fa-solid fa-bullseye"></i>
+            </div>
+            <h3 class="fw-bold fs-5 text-navy mb-3">Our Mission</h3>
+            <p class="text-muted small mb-0">
+              Empower startups, retail giants, healthcare providers, and educational academies with hyper-targeted,
+              cost-effective auto media solutions that deliver verifiable high return on investment.
+            </p>
+          </div>
+        </div>
+
+        <!-- Promise -->
+        <div class="col-lg-4 col-md-6 animate-fade-up" style="transition-delay: 0.2s;">
+          <div class="mv-card">
+            <div class="mv-icon-box">
+              <i class="fa-solid fa-handshake-angle"></i>
+            </div>
+            <h3 class="fw-bold fs-5 text-navy mb-3">Our Quality Promise</h3>
+            <p class="text-muted small mb-0">
+              Every auto in your campaign is fitted with UV-resistant, color-accurate vinyl substrates and verified with
+              high-resolution timestamped geotagged photographs before campaign sign-off.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 CORE ADVANTAGES OF AUTO ADVERTISING -->
+  <section class="section-padding bg-white">
+    <div class="container-custom">
+      <div class="text-center mb-5 animate-fade-up">
+        <span class="section-label">THE TRANSIT ADVANTAGE</span>
+        <h2 class="section-title">Why Auto Advertising Outperforms Traditional Media</h2>
+        <p class="section-subtitle">Auto rickshaw media delivers undeniable eye-level supremacy, mobility, and frequency across Hyderabad.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Advantage 1 -->
+        <div class="col-lg-4 col-md-6 animate-fade-up">
+          <div class="why-card h-100">
+            <div class="why-icon-wrap"><i class="fa-solid fa-eye"></i></div>
+            <h3 class="why-card-title">100% Eye-Level Visibility</h3>
+            <p class="why-card-text">Mounted directly at the line of sight of four-wheeler drivers, two-wheeler riders, and pedestrians in bumper-to-bumper city traffic.</p>
+          </div>
+        </div>
+
+        <!-- Advantage 2 -->
+        <div class="col-lg-4 col-md-6 animate-fade-up" style="transition-delay: 0.1s;">
+          <div class="why-card h-100">
             <div class="why-icon-wrap"><i class="fa-solid fa-map-location-dot"></i></div>
             <h3 class="why-card-title">Hyper-Local Micro Targeting</h3>
-            <p class="why-card-text">Deploy specific vehicle clusters in targeted sectors like IT Corridors (HITEC
-              City/Gachibowli), Commercial zones (Ameerpet/Abids), or Retail markets.</p>
+            <p class="why-card-text">Deploy tailored fleet clusters in designated high-value corridors such as IT parks (HITEC City), coaching belts (Ameerpet), or luxury shopping roads.</p>
           </div>
         </div>
 
+        <!-- Advantage 3 -->
         <div class="col-lg-4 col-md-6 animate-fade-up" style="transition-delay: 0.2s;">
-          <div class="why-card">
-            <div class="why-icon-wrap"><i class="fa-solid fa-shield-check"></i></div>
-            <h3 class="why-card-title">All-Weather Durability</h3>
-            <p class="why-card-text">We utilize industrial-grade, UV-resistant vinyl substrates and robust frame
-              mounting to ensure your ads stay vibrant in rain and heat.</p>
+          <div class="why-card h-100">
+            <div class="why-icon-wrap"><i class="fa-solid fa-wallet"></i></div>
+            <h3 class="why-card-title">Unbeatable Low CPM</h3>
+            <p class="why-card-text">Delivers thousands of daily impressions at a fraction of the cost of static billboards, print ads, or digital outdoor hoardings.</p>
+          </div>
+        </div>
+
+        <!-- Advantage 4 -->
+        <div class="col-lg-4 col-md-6 animate-fade-up" style="transition-delay: 0.3s;">
+          <div class="why-card h-100">
+            <div class="why-icon-wrap"><i class="fa-solid fa-sun-plant-wilt"></i></div>
+            <h3 class="why-card-title">All-Weather Vinyl Durability</h3>
+            <p class="why-card-text">Printed on premium, weatherproof substrates with UV-resistant lamination to resist sun fading, monsoon rain, and road dust.</p>
+          </div>
+        </div>
+
+        <!-- Advantage 5 -->
+        <div class="col-lg-4 col-md-6 animate-fade-up" style="transition-delay: 0.4s;">
+          <div class="why-card h-100">
+            <div class="why-icon-wrap"><i class="fa-solid fa-camera-retro"></i></div>
+            <h3 class="why-card-title">100% Geotagged Audit Proof</h3>
+            <p class="why-card-text">We supply a complete photographic audit dossier detailing vehicle registration numbers, GPS coordinates, and date-time stamps for every auto.</p>
+          </div>
+        </div>
+
+        <!-- Advantage 6 -->
+        <div class="col-lg-4 col-md-6 animate-fade-up" style="transition-delay: 0.5s;">
+          <div class="why-card h-100">
+            <div class="why-icon-wrap"><i class="fa-solid fa-people-group"></i></div>
+            <h3 class="why-card-title">Direct Driver Network</h3>
+            <p class="why-card-text">Our 15-year standing relationships with auto unions across 30+ hubs ensure motivated drivers, well-maintained vehicles, and rapid execution.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- CORE VALUES & COMMITMENT (DARK NAVY SECTION) -->
+  <section class="section-padding bg-navy text-white position-relative">
+    <div class="container-custom">
+      <div class="text-center mb-5 animate-fade-up">
+        <span class="section-label" style="color: var(--bright-cyan);">OUR CORE VALUES</span>
+        <h2 class="section-title text-white">The Pillars of RNR Ads</h2>
+        <p class="section-subtitle text-white-50">What sets our agency apart in Hyderabad's outdoor advertising landscape.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Value 1 -->
+        <div class="col-lg-4 col-md-6 animate-fade-up">
+          <div class="value-box-card">
+            <div class="value-box-icon"><i class="fa-solid fa-certificate"></i></div>
+            <h3 class="fw-bold fs-5 text-white mb-3">100% Geotagged Integrity</h3>
+            <p class="text-white-50 small mb-0">We never compromise on audit transparency. Every single vehicle in your campaign is verified with GPS coordinates and high-res photos.</p>
+          </div>
+        </div>
+
+        <!-- Value 2 -->
+        <div class="col-lg-4 col-md-6 animate-fade-up" style="transition-delay: 0.1s;">
+          <div class="value-box-card">
+            <div class="value-box-icon"><i class="fa-solid fa-bolt"></i></div>
+            <h3 class="fw-bold fs-5 text-white mb-3">Speed & Fleet Agility</h3>
+            <p class="text-white-50 small mb-0">Need a 200-auto blitz launched before a festive weekend? Our extensive driver union network enables execution in 48 to 72 hours.</p>
+          </div>
+        </div>
+
+        <!-- Value 3 -->
+        <div class="col-lg-4 col-md-6 animate-fade-up" style="transition-delay: 0.2s;">
+          <div class="value-box-card">
+            <div class="value-box-icon"><i class="fa-solid fa-chart-line"></i></div>
+            <h3 class="fw-bold fs-5 text-white mb-3">Maximum Return on Ad Spend</h3>
+            <p class="text-white-50 small mb-0">We design route strategies to eliminate dead miles, ensuring your branding stays active in prime traffic sectors throughout the day.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLIENT PARTNERS TRUST STRIP (CROSS SCROLL) -->
+  <section class="section-padding bg-light-blue clients-section">
+    <div class="container-custom">
+      <div class="text-center mb-5 animate-fade-up">
+        <span class="section-label">TRUSTED BY INDUSTRY LEADERS</span>
+        <h2 class="section-title">Brands That Trust RNR Ads Across Hyderabad</h2>
+        <p class="section-subtitle">From Fortune 500 corporations to regional retail leaders, we power high-recall campaigns.</p>
+      </div>
+
+      <!-- Swiper Logo Carousel (Cross Scroll) -->
+      <div class="swiper clients-swiper animate-fade-up">
+        <div class="swiper-wrapper align-items-center">
+          <div class="swiper-slide client-logo-slide">
+            <img src="assets/clients/havells.png" alt="Havells" class="client-logo-img">
+          </div>
+          <div class="swiper-slide client-logo-slide">
+            <img src="assets/clients/augmont gold.png" alt="Augmont Gold" class="client-logo-img">
+          </div>
+          <div class="swiper-slide client-logo-slide">
+            <img src="assets/clients/time.jpg" alt="T.I.M.E." class="client-logo-img">
+          </div>
+          <div class="swiper-slide client-logo-slide">
+            <img src="assets/clients/sundaram finance.jpg" alt="Sundaram Finance" class="client-logo-img">
+          </div>
+          <div class="swiper-slide client-logo-slide">
+            <img src="assets/clients/homefirst.jpg" alt="HomeFirst" class="client-logo-img">
+          </div>
+          <div class="swiper-slide client-logo-slide">
+            <img src="assets/clients/fybros.webp" alt="Fybros" class="client-logo-img">
+          </div>
+          <div class="swiper-slide client-logo-slide">
+            <img src="assets/clients/gate forum.png" alt="Gate Forum" class="client-logo-img">
+          </div>
+          <div class="swiper-slide client-logo-slide">
+            <img src="assets/clients/gs cal tex.png" alt="GS Caltex" class="client-logo-img">
+          </div>
+          <div class="swiper-slide client-logo-slide">
+            <img src="assets/clients/esha IVF.jpg" alt="Esha IVF" class="client-logo-img">
+          </div>
+          <div class="swiper-slide client-logo-slide">
+            <img src="assets/clients/capital now.png" alt="Capital Now" class="client-logo-img">
+          </div>
+          <div class="swiper-slide client-logo-slide">
+            <img src="assets/clients/aeriblu.png" alt="Aeriblu" class="client-logo-img">
+          </div>
+          <div class="swiper-slide client-logo-slide">
+            <img src="assets/clients/Manhattan-Review-Test-Prep.jpg" alt="Manhattan Review" class="client-logo-img">
+          </div>
+          <div class="swiper-slide client-logo-slide">
+            <img src="assets/clients/casa.jpg" alt="Casa" class="client-logo-img">
+          </div>
+          <div class="swiper-slide client-logo-slide">
+            <img src="assets/clients/medquest.webp" alt="Medquest" class="client-logo-img">
+          </div>
+          <div class="swiper-slide client-logo-slide">
+            <img src="assets/clients/fizikem.jpg" alt="Fizikem" class="client-logo-img">
+          </div>
+          <div class="swiper-slide client-logo-slide">
+            <img src="assets/clients/vani.png" alt="Vani" class="client-logo-img">
+          </div>
+          <div class="swiper-slide client-logo-slide">
+            <img src="assets/clients/Hair creations.png" alt="Hair Creations" class="client-logo-img">
+          </div>
+          <div class="swiper-slide client-logo-slide">
+            <img src="assets/clients/AVIS.png" alt="AVIS" class="client-logo-img">
+          </div>
+          <div class="swiper-slide client-logo-slide">
+            <img src="assets/clients/NEST AVIA.jpg" alt="NEST AVIA" class="client-logo-img">
           </div>
         </div>
       </div>
@@ -191,14 +437,24 @@
   </section>
 
   <!-- CTA STRIP -->
-  <section class="section-padding bg-navy text-white text-center">
+  <section class="section-padding bg-dark-navy text-white text-center position-relative overflow-hidden">
     <div class="container-custom animate-fade-up">
-      <h2 class="section-title text-white">Ready to Put Your Brand on Hyderabad's Roads?</h2>
-      <p class="text-white opacity-75 max-w-600 mx-auto mb-4">Contact our media specialists today to plan a high-impact
-        auto advertising campaign.</p>
-      <a href="contact.html" class="btn-cyan">GET A FREE QUOTE <i class="fa-solid fa-arrow-right btn-arrow"></i></a>
+      <span class="section-label text-cyan">START YOUR CAMPAIGN</span>
+      <h2 class="section-title text-white mb-3">Ready to Put Your Brand on Hyderabad's Roads?</h2>
+      <p class="text-white opacity-75 max-w-600 mx-auto mb-4">
+        Contact our media strategists today to get a custom route plan, fleet availability check, and instant pricing.
+      </p>
+      <div class="d-flex align-items-center justify-content-center flex-wrap gap-3">
+        <button type="button" class="btn-cyan px-4 py-3 fs-6" data-bs-toggle="modal" data-bs-target="#quoteModal">
+          GET FREE CAMPAIGN QUOTE <i class="fa-solid fa-arrow-right btn-arrow"></i>
+        </button>
+        <a href="tel:+918143252345" class="btn btn-outline-light rounded-pill px-4 py-3 fw-bold">
+          <i class="fa-solid fa-phone me-2"></i> Call +91 81432 52345
+        </a>
+      </div>
     </div>
   </section>
+
 
   <!-- FOOTER -->
   <footer class="site-footer">
@@ -364,6 +620,7 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 
