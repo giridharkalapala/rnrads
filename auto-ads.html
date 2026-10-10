@@ -174,7 +174,7 @@
 
         <div class="col-lg-6 animate-fade-right">
           <div class="intro-img-wrapper">
-            <img src="assets/images/service-auto-branding.jpg" alt="Branded Auto Rickshaw Hyderabad" class="intro-img"
+            <img src="assets/images/service-havells.jpg" alt="Branded Auto Rickshaw Hyderabad" class="intro-img"
               loading="lazy">
           </div>
         </div>
@@ -200,7 +200,7 @@
         <div class="col-lg-4 col-md-6 animate-fade-up">
           <div class="service-card">
             <div class="service-card-img-wrap">
-              <img src="assets/images/service-auto-branding.jpg" alt="Full Auto Branding" class="service-card-img"
+              <img src="assets/images/service-havells.jpg" alt="Full Auto Branding" class="service-card-img"
                 loading="lazy">
               <span class="service-card-tag">Full Wrap</span>
             </div>
@@ -250,7 +250,7 @@
         <div class="col-lg-4 col-md-6 animate-fade-up" style="transition-delay: 0.2s;">
           <div class="service-card">
             <div class="service-card-img-wrap">
-              <img src="assets/images/service-side-panel.jpg" alt="Side Panel Auto Advertising" class="service-card-img"
+              <img src="assets/images/service-eshaivf.jpg" alt="Side Panel Auto Advertising" class="service-card-img"
                 loading="lazy">
               <span class="service-card-tag">Side Panels</span>
             </div>
@@ -275,97 +275,124 @@
   </section>
 
   <!-- ============================================================
-       CAMPAIGN RATE ESTIMATOR (INTERACTIVE WIDGET)
+       AUTO ADS GALLERY SECTION
   ============================================================ -->
-  <section class="section-padding bg-navy text-white">
+  <section class="section-padding bg-white auto-gallery-section" id="autoAdsGallery">
     <div class="container-custom">
-      <div class="row align-items-center g-5">
-        <div class="col-lg-5 animate-fade-left">
-          <span class="section-label light">INSTANT ESTIMATE</span>
-          <h2 class="section-title text-white">
-            Plan Your Auto Ad Campaign Budget
-          </h2>
-          <p class="text-white opacity-75">
-            Get an instant fleet estimate based on your desired advertising format, vehicle count, and campaign duration
-            across Hyderabad.
-          </p>
-          <div class="p-3 bg-dark-navy rounded-3 border border-secondary mb-3">
-            <div class="d-flex align-items-center gap-3">
-              <i class="fa-solid fa-shield-check text-bright-cyan fs-3"></i>
-              <div>
-                <div class="fw-bold text-white">All-Inclusive Media Package</div>
-                <small class="text-white opacity-75">Printing, Mounting, Driver Fees & Geotagged Auditing
-                  included.</small>
+      <div class="text-center mb-5 animate-fade-up">
+        <span class="section-label">AUTO ADS IN ACTION</span>
+        <h2 class="section-title">See Our Auto Ads Gallery</h2>
+        <p class="section-subtitle">
+          As you browse through our gallery, you'll see how we've brought brands to life on the go, helping businesses expand their reach and connect with their target audience effortlessly.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Gallery Item 1 -->
+        <div class="col-lg-4 col-md-6 col-12 animate-fade-up">
+          <div class="auto-gallery-card" data-gallery-index="0" data-src="assets/images/gallery-time.jpg"
+            data-title="T.I.M.E. Institute & CAT/GATE Coaching" data-category="Education & Test Prep"
+            data-desc="High-frequency student corridor campaign across Ameerpet and Kukatpally driving coaching admissions.">
+            <div class="auto-gallery-img-wrap">
+              <img src="assets/images/gallery-time.jpg" alt="T.I.M.E. Institute Auto Advertising" class="auto-gallery-img" loading="lazy">
+              <div class="auto-gallery-overlay">
+                <div class="auto-gallery-zoom-badge"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                <div class="auto-gallery-overlay-content">
+                  <span class="auto-gallery-cat-pill">Education & Coaching</span>
+                  <h3 class="auto-gallery-card-title">T.I.M.E. Institute</h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-7 animate-fade-right">
-          <div class="bg-white text-navy p-4 p-md-5 rounded-4 shadow-lg">
-            <h3 class="fw-bold fs-4 mb-4 text-navy">Campaign Rate Calculator</h3>
-            <form id="rateCalculatorForm">
-              <div class="row g-3">
-                <!-- Ad Format -->
-                <div class="col-md-6">
-                  <label class="form-label form-label-custom" for="calcFormat">Select Ad Format</label>
-                  <select class="form-select form-select-custom" id="calcFormat">
-                    <option value="rear" selected>Rear Panel Hood Ads</option>
-                    <option value="side">Side Panel Ads (Both Sides)</option>
-                    <option value="full">Full Auto 360° Wrap</option>
-                  </select>
-                </div>
-
-                <!-- Fleet Size -->
-                <div class="col-md-6">
-                  <label class="form-label form-label-custom" for="calcFleet">Number of Autos</label>
-                  <select class="form-select form-select-custom" id="calcFleet">
-                    <option value="50">50 Auto Rickshaws</option>
-                    <option value="100" selected>100 Auto Rickshaws</option>
-                    <option value="250">250 Auto Rickshaws</option>
-                    <option value="500">500 Auto Rickshaws</option>
-                    <option value="1000">1,000+ Fleet Autos</option>
-                  </select>
-                </div>
-
-                <!-- Duration -->
-                <div class="col-md-6">
-                  <label class="form-label form-label-custom" for="calcDuration">Campaign Duration</label>
-                  <select class="form-select form-select-custom" id="calcDuration">
-                    <option value="1" selected>1 Month (30 Days)</option>
-                    <option value="2">2 Months (60 Days)</option>
-                    <option value="3">3 Months (Quarterly)</option>
-                    <option value="6">6 Months (Half Year)</option>
-                  </select>
-                </div>
-
-                <!-- Target Locality -->
-                <div class="col-md-6">
-                  <label class="form-label form-label-custom" for="calcArea">Target Locality Cluster</label>
-                  <select class="form-select form-select-custom" id="calcArea">
-                    <option value="all" selected>All Greater Hyderabad (Citywide)</option>
-                    <option value="it">IT Corridor (HITEC City / Gachibowli)</option>
-                    <option value="central">Central (Banjara Hills / Ameerpet)</option>
-                    <option value="secunderabad">Secunderabad & Cantonment</option>
-                    <option value="east">East & South (Dilsukhnagar / Old City)</option>
-                  </select>
-                </div>
-
-                <!-- Output Box -->
-                <div class="col-12 mt-4">
-                  <div
-                    class="p-3 bg-light-blue rounded-3 border d-flex justify-content-between align-items-center flex-wrap gap-2">
-                    <div>
-                      <small class="text-muted text-uppercase fw-bold">Estimated Monthly Reach</small>
-                      <div class="fw-bold fs-4 text-navy" id="estImpressions">3.5 Million+ Views</div>
-                    </div>
-                    <a href="contact.html" class="btn-cyan py-2 px-4">
-                      Get Official Rate Card <i class="fa-solid fa-arrow-right btn-arrow"></i>
-                    </a>
-                  </div>
+        <!-- Gallery Item 2 -->
+        <div class="col-lg-4 col-md-6 col-12 animate-fade-up" style="transition-delay: 0.1s;">
+          <div class="auto-gallery-card" data-gallery-index="1" data-src="assets/images/gallery-capitalnow.jpg"
+            data-title="Capital Now Instant Personal Loans App" data-category="Fintech & Mobile App"
+            data-desc="Dynamic mobile app download promotion across HITEC City and Gachibowli IT corridors.">
+            <div class="auto-gallery-img-wrap">
+              <img src="assets/images/gallery-capitalnow.jpg" alt="Capital Now Personal Loans Auto Ad" class="auto-gallery-img" loading="lazy">
+              <div class="auto-gallery-overlay">
+                <div class="auto-gallery-zoom-badge"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                <div class="auto-gallery-overlay-content">
+                  <span class="auto-gallery-cat-pill">Fintech & Loans App</span>
+                  <h3 class="auto-gallery-card-title">Capital Now Loans</h3>
                 </div>
               </div>
-            </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Item 3 -->
+        <div class="col-lg-4 col-md-6 col-12 animate-fade-up" style="transition-delay: 0.2s;">
+          <div class="auto-gallery-card" data-gallery-index="2" data-src="assets/images/gallery-fybros.jpg"
+            data-title="Fybros Smart Modular Switches & LED" data-category="Electricals & Appliances"
+            data-desc="High-impact roadside visibility targeting homeowners and contractors across Dilsukhnagar and Secunderabad.">
+            <div class="auto-gallery-img-wrap">
+              <img src="assets/images/gallery-fybros.jpg" alt="Fybros Smart Electricals Auto Ad" class="auto-gallery-img" loading="lazy">
+              <div class="auto-gallery-overlay">
+                <div class="auto-gallery-zoom-badge"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                <div class="auto-gallery-overlay-content">
+                  <span class="auto-gallery-cat-pill">Smart Electricals</span>
+                  <h3 class="auto-gallery-card-title">Fybros Switches & LED</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Item 4 -->
+        <div class="col-lg-4 col-md-6 col-12 animate-fade-up">
+          <div class="auto-gallery-card" data-gallery-index="3" data-src="assets/images/gallery-nestavia.jpg"
+            data-title="NEST AVIA Aviation Academy & Pilot Training" data-category="Aviation & Career Training"
+            data-desc="Citywide transit campaign targeting students and aspiring commercial pilots across Greater Hyderabad.">
+            <div class="auto-gallery-img-wrap">
+              <img src="assets/images/gallery-nestavia.jpg" alt="NEST AVIA Aviation Academy Auto Ad" class="auto-gallery-img" loading="lazy">
+              <div class="auto-gallery-overlay">
+                <div class="auto-gallery-zoom-badge"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                <div class="auto-gallery-overlay-content">
+                  <span class="auto-gallery-cat-pill">Aviation Academy</span>
+                  <h3 class="auto-gallery-card-title">NEST AVIA Academy</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Item 5 -->
+        <div class="col-lg-4 col-md-6 col-12 animate-fade-up" style="transition-delay: 0.1s;">
+          <div class="auto-gallery-card" data-gallery-index="4" data-src="assets/images/gallery-casa.jpg"
+            data-title="CASA Two Wheelers & Scooters Showroom" data-category="Automotive & Retail Showroom"
+            data-desc="Targeted fleet deployment driving showroom footfall in Banjara Hills, Jubilee Hills and Kukatpally.">
+            <div class="auto-gallery-img-wrap">
+              <img src="assets/images/gallery-casa.jpg" alt="CASA Two Wheelers Auto Branding" class="auto-gallery-img" loading="lazy">
+              <div class="auto-gallery-overlay">
+                <div class="auto-gallery-zoom-badge"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                <div class="auto-gallery-overlay-content">
+                  <span class="auto-gallery-cat-pill">Two Wheeler Showroom</span>
+                  <h3 class="auto-gallery-card-title">CASA Two Wheelers</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Item 6 -->
+        <div class="col-lg-4 col-md-6 col-12 animate-fade-up" style="transition-delay: 0.2s;">
+          <div class="auto-gallery-card" data-gallery-index="5" data-src="assets/images/service-gscaltex.jpg"
+            data-title="GS Caltex & Augmont Gold Fleet Campaign" data-category="Multi-Fleet Campaign"
+            data-desc="Captive dwell-time display capturing 90-second view times at major traffic junctions across Greater Hyderabad.">
+            <div class="auto-gallery-img-wrap">
+              <img src="assets/images/service-gscaltex.jpg" alt="GS Caltex & Augmont Gold Fleet Auto Ads" class="auto-gallery-img" loading="lazy">
+              <div class="auto-gallery-overlay">
+                <div class="auto-gallery-zoom-badge"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                <div class="auto-gallery-overlay-content">
+                  <span class="auto-gallery-cat-pill">Multi-Fleet Transit</span>
+                  <h3 class="auto-gallery-card-title">GS Caltex & Augmont</h3>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -373,89 +400,145 @@
   </section>
 
   <!-- ============================================================
-       CLIENT LOGOS SHOWCASE (ACTUAL CLIENT ASSETS)
+       CLIENT LOGOS SHOWCASE (ANIMATED MARQUEE CAROUSEL)
   ============================================================ -->
-  <section class="section-padding bg-white">
+  <section class="section-padding bg-white clients-marquee-section">
     <div class="container-custom">
       <div class="text-center mb-5 animate-fade-up">
         <span class="section-label">OUR REPUTED CLIENTS</span>
         <h2 class="section-title">Brands Powered by RNR Ads</h2>
         <p class="section-subtitle">
-          Leading corporations and retail brands choose RNR Ads for high-frequency auto rickshaw advertising in
-          Hyderabad.
+          Leading corporations and regional retail brands choose RNR Ads for high-frequency auto rickshaw advertising across Greater Hyderabad.
         </p>
       </div>
 
-      <div class="row g-3 g-md-4">
-        <div class="col-lg-2 col-md-3 col-4">
-          <div class="client-grid-card">
-            <img src="assets/clients/havells.png" alt="Havells" class="client-grid-img">
+      <!-- Marquee Wrapper with Smooth Continuous Flow & Side Fade Masks -->
+      <div class="clients-marquee-wrapper animate-fade-up">
+        <!-- Track 1 (Scrolling Forward) -->
+        <div class="clients-marquee-track">
+          <!-- Set 1 -->
+          <div class="client-carousel-card" title="Havells">
+            <img src="assets/clients/havells.png" alt="Havells" class="client-carousel-img">
           </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-4">
-          <div class="client-grid-card">
-            <img src="assets/clients/augmont gold.png" alt="Augmont Gold" class="client-grid-img">
+          <div class="client-carousel-card" title="Augmont Gold">
+            <img src="assets/clients/augmont gold.png" alt="Augmont Gold" class="client-carousel-img">
           </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-4">
-          <div class="client-grid-card">
-            <img src="assets/clients/time.jpg" alt="T.I.M.E." class="client-grid-img">
+          <div class="client-carousel-card" title="T.I.M.E. Institute">
+            <img src="assets/clients/time.jpg" alt="T.I.M.E." class="client-carousel-img">
           </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-4">
-          <div class="client-grid-card">
-            <img src="assets/clients/sundaram finance.jpg" alt="Sundaram Finance" class="client-grid-img">
+          <div class="client-carousel-card" title="Sundaram Finance">
+            <img src="assets/clients/sundaram finance.jpg" alt="Sundaram Finance" class="client-carousel-img">
           </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-4">
-          <div class="client-grid-card">
-            <img src="assets/clients/homefirst.jpg" alt="HomeFirst" class="client-grid-img">
+          <div class="client-carousel-card" title="HomeFirst">
+            <img src="assets/clients/homefirst.jpg" alt="HomeFirst" class="client-carousel-img">
           </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-4">
-          <div class="client-grid-card">
-            <img src="assets/clients/fybros.webp" alt="Fybros" class="client-grid-img">
+          <div class="client-carousel-card" title="Fybros">
+            <img src="assets/clients/fybros.webp" alt="Fybros" class="client-carousel-img">
+          </div>
+          <div class="client-carousel-card" title="Gate Forum">
+            <img src="assets/clients/gate forum.png" alt="Gate Forum" class="client-carousel-img">
+          </div>
+          <div class="client-carousel-card" title="GS Caltex">
+            <img src="assets/clients/gs cal tex.png" alt="GS Caltex" class="client-carousel-img">
+          </div>
+          <div class="client-carousel-card" title="Esha IVF">
+            <img src="assets/clients/esha IVF.jpg" alt="Esha IVF" class="client-carousel-img">
+          </div>
+          <div class="client-carousel-card" title="Capital Now">
+            <img src="assets/clients/capital now.png" alt="Capital Now" class="client-carousel-img">
+          </div>
+
+          <!-- Set 1 Duplicate for Infinite Seamless Loop -->
+          <div class="client-carousel-card" title="Havells">
+            <img src="assets/clients/havells.png" alt="Havells" class="client-carousel-img">
+          </div>
+          <div class="client-carousel-card" title="Augmont Gold">
+            <img src="assets/clients/augmont gold.png" alt="Augmont Gold" class="client-carousel-img">
+          </div>
+          <div class="client-carousel-card" title="T.I.M.E. Institute">
+            <img src="assets/clients/time.jpg" alt="T.I.M.E." class="client-carousel-img">
+          </div>
+          <div class="client-carousel-card" title="Sundaram Finance">
+            <img src="assets/clients/sundaram finance.jpg" alt="Sundaram Finance" class="client-carousel-img">
+          </div>
+          <div class="client-carousel-card" title="HomeFirst">
+            <img src="assets/clients/homefirst.jpg" alt="HomeFirst" class="client-carousel-img">
+          </div>
+          <div class="client-carousel-card" title="Fybros">
+            <img src="assets/clients/fybros.webp" alt="Fybros" class="client-carousel-img">
+          </div>
+          <div class="client-carousel-card" title="Gate Forum">
+            <img src="assets/clients/gate forum.png" alt="Gate Forum" class="client-carousel-img">
+          </div>
+          <div class="client-carousel-card" title="GS Caltex">
+            <img src="assets/clients/gs cal tex.png" alt="GS Caltex" class="client-carousel-img">
+          </div>
+          <div class="client-carousel-card" title="Esha IVF">
+            <img src="assets/clients/esha IVF.jpg" alt="Esha IVF" class="client-carousel-img">
+          </div>
+          <div class="client-carousel-card" title="Capital Now">
+            <img src="assets/clients/capital now.png" alt="Capital Now" class="client-carousel-img">
           </div>
         </div>
 
-        <div class="col-lg-2 col-md-3 col-4">
-          <div class="client-grid-card">
-            <img src="assets/clients/gate forum.png" alt="Gate Forum" class="client-grid-img">
+        <!-- Track 2 (Scrolling Reverse) -->
+        <div class="clients-marquee-track-reverse">
+          <!-- Set 2 -->
+          <div class="client-carousel-card" title="Aeriblu">
+            <img src="assets/clients/aeriblu.png" alt="Aeriblu" class="client-carousel-img">
           </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-4">
-          <div class="client-grid-card">
-            <img src="assets/clients/gs cal tex.png" alt="GS Caltex" class="client-grid-img">
+          <div class="client-carousel-card" title="Manhattan Review">
+            <img src="assets/clients/Manhattan-Review-Test-Prep.jpg" alt="Manhattan Review" class="client-carousel-img">
           </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-4">
-          <div class="client-grid-card">
-            <img src="assets/clients/esha IVF.jpg" alt="Esha IVF" class="client-grid-img">
+          <div class="client-carousel-card" title="AVIS">
+            <img src="assets/clients/AVIS.png" alt="AVIS" class="client-carousel-img">
           </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-4">
-          <div class="client-grid-card">
-            <img src="assets/clients/capital now.png" alt="Capital Now" class="client-grid-img">
+          <div class="client-carousel-card" title="NEST AVIA">
+            <img src="assets/clients/NEST AVIA.jpg" alt="NEST AVIA" class="client-carousel-img">
           </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-4">
-          <div class="client-grid-card">
-            <img src="assets/clients/aeriblu.png" alt="Aeriblu" class="client-grid-img">
+          <div class="client-carousel-card" title="CASA Two Wheelers">
+            <img src="assets/clients/casa.jpg" alt="CASA" class="client-carousel-img">
           </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-4">
-          <div class="client-grid-card">
-            <img src="assets/clients/Manhattan-Review-Test-Prep.jpg" alt="Manhattan Review" class="client-grid-img">
+          <div class="client-carousel-card" title="Medquest Diagnostics">
+            <img src="assets/clients/medquest.webp" alt="Medquest" class="client-carousel-img">
           </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-4">
-          <div class="client-grid-card">
-            <img src="assets/clients/AVIS.png" alt="AVIS" class="client-grid-img">
+          <div class="client-carousel-card" title="Fizikem">
+            <img src="assets/clients/fizikem.jpg" alt="Fizikem" class="client-carousel-img">
           </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-4">
-          <div class="client-grid-card">
-            <img src="assets/clients/NEST AVIA.jpg" alt="NEST AVIA" class="client-grid-img">
+          <div class="client-carousel-card" title="Vani High School">
+            <img src="assets/clients/vani.png" alt="Vani" class="client-carousel-img">
+          </div>
+          <div class="client-carousel-card" title="Hair Creations">
+            <img src="assets/clients/Hair creations.png" alt="Hair Creations" class="client-carousel-img">
+          </div>
+
+          <!-- Set 2 Duplicate for Infinite Seamless Loop -->
+          <div class="client-carousel-card" title="Aeriblu">
+            <img src="assets/clients/aeriblu.png" alt="Aeriblu" class="client-carousel-img">
+          </div>
+          <div class="client-carousel-card" title="Manhattan Review">
+            <img src="assets/clients/Manhattan-Review-Test-Prep.jpg" alt="Manhattan Review" class="client-carousel-img">
+          </div>
+          <div class="client-carousel-card" title="AVIS">
+            <img src="assets/clients/AVIS.png" alt="AVIS" class="client-carousel-img">
+          </div>
+          <div class="client-carousel-card" title="NEST AVIA">
+            <img src="assets/clients/NEST AVIA.jpg" alt="NEST AVIA" class="client-carousel-img">
+          </div>
+          <div class="client-carousel-card" title="CASA Two Wheelers">
+            <img src="assets/clients/casa.jpg" alt="CASA" class="client-carousel-img">
+          </div>
+          <div class="client-carousel-card" title="Medquest Diagnostics">
+            <img src="assets/clients/medquest.webp" alt="Medquest" class="client-carousel-img">
+          </div>
+          <div class="client-carousel-card" title="Fizikem">
+            <img src="assets/clients/fizikem.jpg" alt="Fizikem" class="client-carousel-img">
+          </div>
+          <div class="client-carousel-card" title="Vani High School">
+            <img src="assets/clients/vani.png" alt="Vani" class="client-carousel-img">
+          </div>
+          <div class="client-carousel-card" title="Hair Creations">
+            <img src="assets/clients/Hair creations.png" alt="Hair Creations" class="client-carousel-img">
           </div>
         </div>
       </div>
@@ -759,32 +842,350 @@
     </div>
   </div>
 
+  <!-- ============================================================
+       INTERACTIVE GALLERY LIGHTBOX POPUP MODAL
+  ============================================================ -->
+  <div id="rnrLightboxModal" class="rnr-lightbox-modal" role="dialog" aria-modal="true" aria-label="Auto Ads Image Lightbox" tabindex="-1">
+    <!-- Top Control Bar -->
+    <div class="rnr-lb-topbar">
+      <div class="rnr-lb-meta">
+        <span id="rnrLbCounter" class="rnr-lb-counter">1 / 6</span>
+        <span id="rnrLbTitleTop" class="rnr-lb-title-top">Auto Ads Gallery</span>
+      </div>
+      <div class="rnr-lb-actions">
+        <!-- Zoom In Button -->
+        <button type="button" class="rnr-lb-btn" id="rnrLbZoomIn" title="Zoom In (+)" aria-label="Zoom In">
+          <i class="fa-solid fa-magnifying-glass-plus"></i>
+        </button>
+        <!-- Zoom Out Button -->
+        <button type="button" class="rnr-lb-btn" id="rnrLbZoomOut" title="Zoom Out (-)" aria-label="Zoom Out">
+          <i class="fa-solid fa-magnifying-glass-minus"></i>
+        </button>
+        <!-- Reset Zoom Button -->
+        <button type="button" class="rnr-lb-btn" id="rnrLbZoomReset" title="Reset Zoom (0)" aria-label="Reset Zoom">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+        <!-- Share Button -->
+        <button type="button" class="rnr-lb-btn" id="rnrLbShare" title="Share Image" aria-label="Share Image">
+          <i class="fa-solid fa-share-nodes"></i>
+        </button>
+        <!-- Close Button -->
+        <button type="button" class="rnr-lb-btn rnr-lb-close" id="rnrLbClose" title="Close (Esc)" aria-label="Close Lightbox">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Center Image Stage Area -->
+    <div class="rnr-lb-stage-wrap" id="rnrLbStageWrap">
+      <!-- Left Side Previous Arrow -->
+      <button type="button" class="rnr-lb-arrow rnr-lb-arrow-prev" id="rnrLbPrev" title="Previous Image (Left Arrow)" aria-label="Previous Image">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+
+      <!-- Main Image Display -->
+      <div class="rnr-lb-stage" id="rnrLbStage">
+        <img id="rnrLbImage" src="assets/images/gallery-time.jpg" alt="Auto Ad Campaign View" class="rnr-lb-img">
+      </div>
+
+      <!-- Right Side Next Arrow -->
+      <button type="button" class="rnr-lb-arrow rnr-lb-arrow-next" id="rnrLbNext" title="Next Image (Right Arrow)" aria-label="Next Image">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+
+    <!-- Bottom Caption Bar -->
+    <div class="rnr-lb-bottombar">
+      <h3 class="rnr-lb-caption-title" id="rnrLbCaptionTitle">T.I.M.E. Institute & CAT/GATE Coaching</h3>
+      <p class="rnr-lb-caption-desc" id="rnrLbCaptionDesc">High-frequency student corridor campaign across Ameerpet and Kukatpally driving coaching admissions.</p>
+    </div>
+
+    <!-- Share Feedback Toast -->
+    <div id="rnrLbToast" class="rnr-lb-toast" role="status" aria-live="polite">
+      <i class="fa-solid fa-circle-check"></i>
+      <span id="rnrLbToastText">Link copied to clipboard!</span>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
   <script>
-    // Rate Calculator interactive logic
-    const calcFleet = document.getElementById('calcFleet');
-    const calcFormat = document.getElementById('calcFormat');
-    const calcDuration = document.getElementById('calcDuration');
-    const estImpressions = document.getElementById('estImpressions');
+    /* ============================================================
+       AUTO ADS GALLERY & LIGHTBOX JAVASCRIPT
+    ============================================================ */
+    (function () {
+      const galleryCards = document.querySelectorAll('.auto-gallery-card');
+      const modal = document.getElementById('rnrLightboxModal');
+      if (!galleryCards.length || !modal) return;
 
-    function updateEstimate() {
-      if (!calcFleet || !estImpressions) return;
-      const count = parseInt(calcFleet.value, 10) || 100;
-      const duration = parseInt(calcDuration.value, 10) || 1;
-      const monthlyViews = (count * 35000 * duration);
-      if (monthlyViews >= 1000000) {
-        estImpressions.innerText = (monthlyViews / 1000000).toFixed(1) + ' Million+ Impressions';
-      } else {
-        estImpressions.innerText = (monthlyViews / 1000).toFixed(0) + 'K+ Impressions';
+      const lbImage = document.getElementById('rnrLbImage');
+      const lbCounter = document.getElementById('rnrLbCounter');
+      const lbTitleTop = document.getElementById('rnrLbTitleTop');
+      const lbCaptionTitle = document.getElementById('rnrLbCaptionTitle');
+      const lbCaptionDesc = document.getElementById('rnrLbCaptionDesc');
+      const lbStage = document.getElementById('rnrLbStage');
+      const lbStageWrap = document.getElementById('rnrLbStageWrap');
+      const lbToast = document.getElementById('rnrLbToast');
+      const lbToastText = document.getElementById('rnrLbToastText');
+
+      const btnClose = document.getElementById('rnrLbClose');
+      const btnPrev = document.getElementById('rnrLbPrev');
+      const btnNext = document.getElementById('rnrLbNext');
+      const btnZoomIn = document.getElementById('rnrLbZoomIn');
+      const btnZoomOut = document.getElementById('rnrLbZoomOut');
+      const btnZoomReset = document.getElementById('rnrLbZoomReset');
+      const btnShare = document.getElementById('rnrLbShare');
+
+      // Gallery dataset
+      const galleryData = Array.from(galleryCards).map(function (card) {
+        return {
+          src: card.getAttribute('data-src'),
+          title: card.getAttribute('data-title') || 'Auto Rickshaw Campaign',
+          category: card.getAttribute('data-category') || 'Transit Advertising',
+          desc: card.getAttribute('data-desc') || 'High-impact outdoor branding across Hyderabad with RNR Ads.'
+        };
+      });
+
+      let currentIdx = 0;
+      let zoomLevel = 1.0;
+      const minZoom = 1.0;
+      const maxZoom = 3.0;
+      const zoomStep = 0.4;
+
+      let isDragging = false;
+      let startX = 0, startY = 0;
+      let translateX = 0, translateY = 0;
+      let touchStartX = 0, touchEndX = 0;
+
+      function updateImageTransform() {
+        if (!lbStage) return;
+        lbStage.style.transform = `scale(${zoomLevel}) translate(${translateX}px, ${translateY}px)`;
+        if (zoomLevel > 1.0) {
+          lbStage.classList.add('zoomed');
+        } else {
+          lbStage.classList.remove('zoomed');
+          translateX = 0;
+          translateY = 0;
+          lbStage.style.transform = `scale(1)`;
+        }
       }
-    }
 
-    if (calcFleet && calcFormat && calcDuration) {
-      calcFleet.addEventListener('change', updateEstimate);
-      calcFormat.addEventListener('change', updateEstimate);
-      calcDuration.addEventListener('change', updateEstimate);
-    }
+      function resetZoom() {
+        zoomLevel = 1.0;
+        translateX = 0;
+        translateY = 0;
+        updateImageTransform();
+      }
+
+      function showImage(index) {
+        if (index < 0) index = galleryData.length - 1;
+        if (index >= galleryData.length) index = 0;
+        currentIdx = index;
+
+        resetZoom();
+
+        const item = galleryData[currentIdx];
+        lbImage.style.opacity = '0';
+
+        setTimeout(function () {
+          lbImage.src = item.src;
+          lbImage.alt = item.title;
+          lbCounter.textContent = `${currentIdx + 1} / ${galleryData.length}`;
+          lbTitleTop.textContent = item.title;
+          lbCaptionTitle.textContent = item.title;
+          lbCaptionDesc.textContent = item.desc;
+          lbImage.style.opacity = '1';
+        }, 150);
+      }
+
+      function openLightbox(index) {
+        currentIdx = index;
+        showImage(currentIdx);
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        modal.focus();
+      }
+
+      function closeLightbox() {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+        resetZoom();
+      }
+
+      // Bind card click triggers
+      galleryCards.forEach(function (card, index) {
+        card.addEventListener('click', function () {
+          openLightbox(index);
+        });
+      });
+
+      // Controls
+      btnClose.addEventListener('click', closeLightbox);
+      btnPrev.addEventListener('click', function (e) {
+        e.stopPropagation();
+        showImage(currentIdx - 1);
+      });
+      btnNext.addEventListener('click', function (e) {
+        e.stopPropagation();
+        showImage(currentIdx + 1);
+      });
+
+      // Zoom In
+      btnZoomIn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        if (zoomLevel < maxZoom) {
+          zoomLevel = Math.min(maxZoom, +(zoomLevel + zoomStep).toFixed(2));
+          updateImageTransform();
+        }
+      });
+
+      // Zoom Out
+      btnZoomOut.addEventListener('click', function (e) {
+        e.stopPropagation();
+        if (zoomLevel > minZoom) {
+          zoomLevel = Math.max(minZoom, +(zoomLevel - zoomStep).toFixed(2));
+          if (zoomLevel <= 1.0) {
+            resetZoom();
+          } else {
+            updateImageTransform();
+          }
+        }
+      });
+
+      // Reset Zoom
+      btnZoomReset.addEventListener('click', function (e) {
+        e.stopPropagation();
+        resetZoom();
+      });
+
+      // Share Feature
+      function showToast(message) {
+        if (!lbToast) return;
+        lbToastText.textContent = message;
+        lbToast.classList.add('show');
+        setTimeout(function () {
+          lbToast.classList.remove('show');
+        }, 3200);
+      }
+
+      btnShare.addEventListener('click', function (e) {
+        e.stopPropagation();
+        const item = galleryData[currentIdx];
+        const shareData = {
+          title: item.title + ' | RNR Ads Hyderabad',
+          text: item.desc,
+          url: window.location.href.split('#')[0] + '#autoAdsGallery'
+        };
+
+        if (navigator.share) {
+          navigator.share(shareData).catch(function () {
+            copyLinkFallback(shareData.url);
+          });
+        } else {
+          copyLinkFallback(shareData.url);
+        }
+      });
+
+      function copyLinkFallback(url) {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(url).then(function () {
+            showToast('Gallery campaign link copied to clipboard!');
+          }).catch(function () {
+            showToast('Link: ' + url);
+          });
+        } else {
+          showToast('Link: ' + url);
+        }
+      }
+
+      // Close on Backdrop Click
+      modal.addEventListener('click', function (e) {
+        if (
+          e.target === modal ||
+          e.target === lbStageWrap ||
+          e.target === lbStage
+        ) {
+          if (zoomLevel > 1.0) {
+            resetZoom();
+          } else {
+            closeLightbox();
+          }
+        }
+      });
+
+      // Keyboard Controls
+      document.addEventListener('keydown', function (e) {
+        if (!modal.classList.contains('active')) return;
+
+        if (e.key === 'Escape') {
+          closeLightbox();
+        } else if (e.key === 'ArrowLeft') {
+          showImage(currentIdx - 1);
+        } else if (e.key === 'ArrowRight') {
+          showImage(currentIdx + 1);
+        } else if (e.key === '+' || e.key === '=') {
+          btnZoomIn.click();
+        } else if (e.key === '-' || e.key === '_') {
+          btnZoomOut.click();
+        } else if (e.key === '0') {
+          resetZoom();
+        }
+      });
+
+      // Pan image with mouse when zoomed in
+      lbStage.addEventListener('mousedown', function (e) {
+        if (zoomLevel <= 1.0) return;
+        isDragging = true;
+        startX = e.clientX - translateX;
+        startY = e.clientY - translateY;
+        e.preventDefault();
+      });
+
+      window.addEventListener('mousemove', function (e) {
+        if (!isDragging) return;
+        translateX = (e.clientX - startX);
+        translateY = (e.clientY - startY);
+        updateImageTransform();
+      });
+
+      window.addEventListener('mouseup', function () {
+        isDragging = false;
+      });
+
+      // Touch events for mobile swipe / pan
+      lbStageWrap.addEventListener('touchstart', function (e) {
+        if (e.touches.length === 1) {
+          touchStartX = e.touches[0].clientX;
+          if (zoomLevel > 1.0) {
+            isDragging = true;
+            startX = e.touches[0].clientX - translateX;
+            startY = e.touches[0].clientY - translateY;
+          }
+        }
+      }, { passive: true });
+
+      lbStageWrap.addEventListener('touchmove', function (e) {
+        if (isDragging && zoomLevel > 1.0 && e.touches.length === 1) {
+          translateX = (e.touches[0].clientX - startX);
+          translateY = (e.touches[0].clientY - startY);
+          updateImageTransform();
+        }
+      }, { passive: true });
+
+      lbStageWrap.addEventListener('touchend', function (e) {
+        if (isDragging) {
+          isDragging = false;
+        } else if (zoomLevel <= 1.0) {
+          touchEndX = e.changedTouches[0].clientX;
+          const diff = touchStartX - touchEndX;
+          if (diff > 50) {
+            showImage(currentIdx + 1);
+          } else if (diff < -50) {
+            showImage(currentIdx - 1);
+          }
+        }
+      }, { passive: true });
+    })();
   </script>
 </body>
 
