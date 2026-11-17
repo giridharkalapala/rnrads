@@ -9,9 +9,11 @@
   .hero-heading {
     font-size: 4.2rem;
   }
+
   .hero-swiper {
     height: 680px;
   }
+
   .gallery-item {
     height: 320px;
   }
@@ -22,6 +24,7 @@
   .hero-heading {
     font-size: 3.6rem;
   }
+
   .section-title {
     font-size: 2.4rem;
   }
@@ -33,17 +36,60 @@
     padding-left: 24px;
     padding-right: 24px;
   }
+
   .hero-heading {
     font-size: 3.2rem;
   }
+
   .hero-swiper {
     height: 600px;
   }
+
   .section-title {
     font-size: 2.2rem;
   }
+
   .gallery-item {
     height: 250px;
+  }
+
+  /* Modern Service Cards */
+  .modern-service-card {
+    gap: 16px;
+    padding: 14px;
+  }
+
+  .modern-service-media {
+    flex: 0 0 40%;
+    max-width: 40%;
+    min-height: 200px;
+  }
+
+  .modern-service-title {
+    font-size: 1.22rem;
+  }
+
+  .modern-service-desc {
+    font-size: 0.84rem;
+    margin-bottom: 8px;
+  }
+
+  .modern-feature-pill {
+    font-size: 0.72rem;
+    padding: 2px 7px;
+  }
+
+  /* Contact CTA Direct Buttons Laptop */
+  .contact-cta-btn-group {
+    gap: 10px;
+  }
+
+  .contact-cta-btn-group .btn-cyan,
+  .contact-cta-btn-group .btn-whatsapp-direct,
+  .contact-cta-btn-group .btn-success {
+    padding: 12px 18px;
+    font-size: 0.90rem;
+    gap: 6px;
   }
 }
 
@@ -58,14 +104,17 @@
   .top-bar-social {
     display: none;
   }
+
   .top-bar-inner {
     justify-content: center;
   }
+
   .top-bar-contact {
     gap: 16px;
     flex-wrap: wrap;
     justify-content: center;
   }
+
   .top-bar-item.location-item {
     display: none;
   }
@@ -128,15 +177,19 @@
   .hero-swiper {
     height: 560px;
   }
+
   .hero-heading {
     font-size: 2.6rem;
   }
+
   .hero-desc {
     font-size: 1.05rem;
   }
+
   .hero-stats-row {
     gap: 20px;
   }
+
   .hero-stat-number {
     font-size: 1.6rem;
   }
@@ -154,15 +207,19 @@
     grid-template-columns: repeat(6, 1fr);
     gap: 16px;
   }
+
   .gallery-item.col-span-4 {
     grid-column: span 3;
   }
+
   .gallery-item.col-span-6 {
     grid-column: span 3;
   }
+
   .gallery-item.col-span-12 {
     grid-column: span 6;
   }
+
   .gallery-item {
     height: 220px;
   }
@@ -171,6 +228,7 @@
   .exp-watermark {
     font-size: 160px;
   }
+
   .exp-img-wrap img {
     height: 340px;
     margin-top: 30px;
@@ -180,8 +238,35 @@
   .contact-info-card {
     margin-bottom: 30px;
   }
+
+  .contact-cta-btn-group {
+    margin-bottom: 24px;
+    gap: 14px;
+  }
+
+  .contact-cta-btn-group .btn-cyan,
+  .contact-cta-btn-group .btn-whatsapp-direct,
+  .contact-cta-btn-group .btn-success {
+    padding: 13px 24px;
+    font-size: 0.95rem;
+  }
+
   .contact-form-card {
     padding: 30px 24px;
+  }
+
+  .format-detail-img {
+    max-height: 420px;
+  }
+
+  /* Campaign Showcase Cards Tablet */
+  .campaign-card-media,
+  .campaign-card-media-lg {
+    height: 220px;
+  }
+
+  .campaign-card-body {
+    padding: 18px 20px;
   }
 
   /* Footer */
@@ -189,6 +274,22 @@
     flex-direction: column;
     gap: 12px;
     text-align: center;
+  }
+
+  /* Modern Service Cards Tablet */
+  .modern-service-card {
+    padding: 16px;
+    gap: 22px;
+  }
+
+  .modern-service-media {
+    flex: 0 0 38%;
+    max-width: 38%;
+    min-height: 220px;
+  }
+
+  .modern-service-title {
+    font-size: 1.35rem;
   }
 }
 
@@ -198,37 +299,81 @@
     padding-top: 65px;
     padding-bottom: 65px;
   }
+
   .container-custom {
     padding-left: 20px;
     padding-right: 20px;
   }
+
   .section-title {
     font-size: 1.95rem;
   }
+
   .hero-swiper {
     height: 540px;
   }
+
   .hero-heading {
     font-size: 2.2rem;
   }
+
   .hero-swiper .swiper-button-prev,
   .hero-swiper .swiper-button-next {
     display: none !important;
   }
+
   .hero-stats-row {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
   }
+
   .gallery-grid {
     grid-template-columns: 1fr;
     gap: 14px;
   }
+
   .gallery-item.col-span-4,
   .gallery-item.col-span-6,
   .gallery-item.col-span-12 {
     grid-column: span 1;
     height: 240px;
+  }
+
+  /* Modern Service Cards Mobile */
+  .modern-service-card {
+    flex-direction: column;
+    padding: 14px;
+    gap: 16px;
+    border-radius: var(--radius-lg);
+  }
+
+  .modern-service-media {
+    flex: 0 0 auto;
+    max-width: 100%;
+    width: 100%;
+    height: 200px;
+    min-height: 200px;
+  }
+
+  .modern-service-content {
+    padding: 4px 4px 6px;
+  }
+
+  .modern-service-title {
+    font-size: 1.28rem;
+  }
+
+  /* Contact CTA Direct Buttons Phablet */
+  .contact-cta-btn-group {
+    gap: 12px;
+  }
+
+  .contact-cta-btn-group .btn-cyan,
+  .contact-cta-btn-group .btn-whatsapp-direct,
+  .contact-cta-btn-group .btn-success {
+    padding: 12px 20px;
+    font-size: 0.92rem;
   }
 }
 
@@ -238,6 +383,7 @@
     padding-top: 55px;
     padding-bottom: 55px;
   }
+
   .container-custom {
     padding-left: 18px;
     padding-right: 18px;
@@ -247,6 +393,7 @@
   .top-bar-contact .email-item {
     display: none;
   }
+
   .top-bar-inner {
     justify-content: center;
   }
@@ -255,40 +402,48 @@
   .hero-swiper {
     height: 580px;
   }
+
   .hero-badge {
     font-size: 0.74rem;
     padding: 6px 14px;
     letter-spacing: 1.2px;
   }
+
   .hero-heading {
     font-size: 1.9rem;
     line-height: 1.15;
   }
+
   .hero-desc {
     font-size: 0.95rem;
     line-height: 1.55;
     margin-bottom: 1.5rem;
   }
+
   .hero-btn-group {
     flex-direction: column;
     align-items: stretch;
     gap: 10px;
     margin-bottom: 1.5rem;
   }
+
   .hero-btn-group .btn-cyan,
   .hero-btn-group .btn-outline-white {
     width: 100%;
     padding: 12px 20px;
     font-size: 0.92rem;
   }
+
   .hero-stats-row {
     grid-template-columns: 1fr 1fr;
     gap: 14px;
     padding-top: 1.25rem;
   }
+
   .hero-stat-number {
     font-size: 1.45rem;
   }
+
   .hero-stat-label {
     font-size: 0.76rem;
   }
@@ -297,6 +452,7 @@
   .section-title {
     font-size: 1.75rem;
   }
+
   .section-subtitle {
     font-size: 0.98rem;
   }
@@ -309,6 +465,7 @@
     height: 48px;
     font-size: 1.5rem;
   }
+
   .back-to-top {
     bottom: 74px;
     right: 16px;
@@ -321,6 +478,7 @@
   .service-card-img-wrap {
     height: 180px;
   }
+
   .service-card-body {
     padding: 20px 18px;
   }
@@ -330,15 +488,95 @@
     padding: 24px 20px;
   }
 
+  /* Contact CTA Direct Buttons Mobile Portrait */
+  .contact-cta-btn-group {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    width: 100%;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+
+  .contact-cta-btn-group .btn-cyan,
+  .contact-cta-btn-group .btn-whatsapp-direct,
+  .contact-cta-btn-group .btn-success {
+    width: 100% !important;
+    justify-content: center;
+    text-align: center;
+    padding: 13px 20px;
+    font-size: 0.94rem;
+    min-height: 48px;
+  }
+
   /* Contact Form */
   .contact-form-card {
     padding: 24px 18px;
     border-radius: var(--radius-lg);
   }
+
+  .format-detail-img {
+    max-height: 320px;
+  }
+
+  /* Campaign Showcase Cards Mobile */
+  .campaign-card-media,
+  .campaign-card-media-lg {
+    height: 200px;
+  }
+
+  .campaign-card-body {
+    padding: 18px 18px;
+  }
+
+  .campaign-card-title {
+    font-size: 1.08rem;
+  }
+
   .form-control-custom,
   .form-select-custom {
     padding: 10px 14px;
     font-size: 0.92rem;
+  }
+
+  /* Modern Service Cards Small Mobile */
+  .modern-service-card {
+    padding: 12px;
+    gap: 14px;
+  }
+
+  .modern-service-media {
+    height: 180px;
+    min-height: 180px;
+  }
+
+  .modern-service-title {
+    font-size: 1.18rem;
+  }
+
+  .modern-service-desc {
+    font-size: 0.84rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+
+  .modern-service-features {
+    gap: 5px;
+    margin-bottom: 12px;
+  }
+
+  .modern-feature-pill {
+    font-size: 0.7rem;
+    padding: 2px 7px;
+  }
+
+  .modern-service-btn {
+    font-size: 0.84rem;
+  }
+
+  .modern-service-btn .btn-circle-icon {
+    width: 28px;
+    height: 28px;
+    font-size: 0.72rem;
   }
 }
 
@@ -348,31 +586,89 @@
     padding-top: 48px;
     padding-bottom: 48px;
   }
+
   .container-custom {
     padding-left: 14px;
     padding-right: 14px;
   }
+
   .hero-heading {
     font-size: 1.65rem;
   }
+
   .section-title {
     font-size: 1.55rem;
   }
+
   .hero-badge {
     font-size: 0.68rem;
     padding: 5px 10px;
   }
+
   .brand-logo-img {
     height: 36px;
   }
+
   .hero-stat-number {
     font-size: 1.3rem;
   }
+
   .hero-stat-label {
     font-size: 0.72rem;
   }
+
+  .contact-cta-btn-group {
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .contact-cta-btn-group .btn-cyan,
+  .contact-cta-btn-group .btn-whatsapp-direct,
+  .contact-cta-btn-group .btn-success {
+    padding: 11px 14px;
+    font-size: 0.88rem;
+    min-height: 44px;
+  }
+
   .contact-form-card {
     padding: 20px 14px;
+  }
+
+  .format-detail-img {
+    max-height: 250px;
+  }
+
+  /* Campaign Showcase Cards Ultra-Small */
+  .campaign-card-media,
+  .campaign-card-media-lg {
+    height: 175px;
+  }
+
+  .campaign-card-body {
+    padding: 14px 14px;
+  }
+
+  .campaign-card-title {
+    font-size: 1rem;
+  }
+
+  /* Modern Service Cards Ultra-Small */
+  .modern-service-card {
+    padding: 10px;
+    gap: 12px;
+  }
+
+  .modern-service-media {
+    height: 150px;
+    min-height: 150px;
+  }
+
+  .modern-service-title {
+    font-size: 1.1rem;
+  }
+
+  .modern-service-desc {
+    font-size: 0.8rem;
   }
 }
 
@@ -381,23 +677,28 @@
   .about-stats-section {
     margin-top: -30px;
   }
+
   .about-stat-box {
     border-right: none;
     border-bottom: 1px solid #EEF2F6;
     padding-bottom: 16px;
   }
+
   .about-stat-box:last-child {
     border-bottom: none;
   }
+
   .floating-experience-card {
     position: static;
     max-width: 100%;
     margin-top: 20px;
   }
+
   .floating-badge-top {
     top: 14px;
     right: 14px;
   }
+
   .story-main-img {
     height: 340px;
   }
@@ -407,12 +708,15 @@
   .about-hero-section {
     padding: 60px 0 50px;
   }
+
   .about-stats-wrapper {
     padding: 20px 14px;
   }
+
   .about-stat-val {
     font-size: 1.6rem;
   }
+
   .story-main-img {
     height: 260px;
   }

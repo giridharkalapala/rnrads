@@ -476,4 +476,19 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   }
+
+  /* Pre-select service option from URL parameter (?service=...) */
+  const urlParams = new URLSearchParams(window.location.search);
+  const serviceParam = urlParams.get('service');
+  if (serviceParam) {
+    const norm = serviceParam.toLowerCase().replace(/\+/g, ' ').trim();
+    const serviceSelects = document.querySelectorAll('select[name="service"], #modalService, #aaService');
+    serviceSelects.forEach(function (sel) {
+      Array.from(sel.options).forEach(function (opt) {
+        if (opt.value && opt.value.toLowerCase().includes(norm)) {
+          sel.value = opt.value;
+        }
+      });
+    });
+  }
 });
